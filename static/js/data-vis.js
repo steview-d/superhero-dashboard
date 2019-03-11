@@ -5,16 +5,23 @@ queue()
 function createDataVis(error, superheroData) {
     var ndx = crossfilter(superheroData);
 
-    //Tidy 
-    superheroData.forEach(function(d) {
-        d.skin_color = d["Skin color"];
-    });
+    // MIGHT NOT BE REQUIRED - TBC
+    // Allow script to read data with blanks in headers
+    // superheroData.forEach(function(d) {
+    //     d.skin_color = d["Skin color"];
+    //     d.hair_color = d["Hair color"];
+    //     d.alter_ego = d["Alter Egos"];
+    // });
 
-    //superheroData.Alignment.filter(clean_alignment_data)
-
+    // Graphs & Charts & Pies, etc
     gender_selector(ndx);
-    test_graph_one(ndx);
-    test_graph_two(ndx);
+    alignment(ndx);
+    alter_ego(ndx);
+    skin_color(ndx);
+    hair_color(ndx);
+    eye_color(ndx);
+
+
     dc.renderAll();
 }
 
@@ -38,13 +45,13 @@ function gender_selector(ndx) {
         .group(group);
 }
 
-function test_graph_one(ndx) {
+function alignment(ndx) {
 
-    var alignmentDim = ndx.dimension(function(d) { return d.Alignment; });
+    var alignmentDim = ndx.dimension(dc.pluck('Alignment'));
     var alignmentGroup = remove_blanks(alignmentDim.group());
     //var alignment_group = remove_blanks(alignment_group);
 
-    dc.pieChart('#graph-one')
+    dc.pieChart('#alignment')
         .height(350)
         .radius(130)
         .transitionDuration(500)
@@ -52,14 +59,51 @@ function test_graph_one(ndx) {
         .group(alignmentGroup);
 }
 
-function test_graph_two(ndx) {
+function alter_ego(ndx) {
 
-    var skinColorDim = ndx.dimension(function(d) { return d.skin_color; });
+    var alterEgoDim = ndx.dimension(dc.pluck('Alter Egos'));
+    var alterEgoGroup = remove_blanks(alterEgoDim.group());
+
+    dc.pieChart('#alter-ego')
+        .height(350)
+        .radius(130)
+        .transitionDuration(500)
+        .dimension(alterEgoDim)
+        .group(alterEgoGroup);
+}
+
+function skin_color(ndx) {
+
+    var skinColorDim = ndx.dimension(dc.pluck('Skin color'));
     var skinColorGroup = remove_blanks(skinColorDim.group());
 
-    dc.rowChart('#graph-two')
-        .width(800)
-        .height(800)
+    dc.pieChart('#skin-color')
+        .height(350)
+        .radius(130)
         .dimension(skinColorDim)
         .group(skinColorGroup);
+}
+
+function hair_color(ndx) {
+
+    var hairColorDim = ndx.dimension(dc.pluck('Hair color'));
+    var hairColorGroup = remove_blanks(hairColorDim.group());
+
+    dc.pieChart('#hair-color')
+        .height(350)
+        .radius(130)
+        .dimension(hairColorDim)
+        .group(hairColorGroup);
+}
+
+function eye_color(ndx) {
+
+    var eyeColorDim = ndx.dimension(dc.pluck('Eye color'));
+    var eyeColorGroup = remove_blanks(eyeColorDim.group());
+
+    dc.pieChart('#eye-color')
+        .height(350)
+        .radius(130)
+        .dimension(eyeColorDim)
+        .group(eyeColorGroup);
 }
