@@ -12,7 +12,7 @@ Agent 13,80,40,45,50,45,85,Yes,Marvel Comics,good,Female,,5'8 // 173 cm,135 lb /
 Agent Bob,60,10,15,5,5,20,No,Marvel Comics,good,Male,Human,5'10 // 178 cm,181 lb // 81 kg,Brown,Brown,,115
 Agent Zero,90,30,40,80,75,95,No,Marvel Comics,good,Male,,6'3 // 191 cm,230 lb // 104 kg,,,,410
 Air-Walker,80,85,100,85,100,40,No,Marvel Comics,bad,Male,,6'2 // 188 cm,240 lb // 108 kg,Blue,White,,490
-Ajax,80,50,35,80,35,55,Yes,Marvel Comics,bad,Male,Cyborg,6'4 // 193 cm,200 lb // 90 kg,Brown,Blackone,,335
+Ajax,80,50,35,80,35,55,Yes,Marvel Comics,bad,Male,Cyborg,6'4 // 193 cm,200 lb // 90 kg,Brown,Black,,335
 Alex Mercer,80,80,45,90,100,50,No,Wildstorm,bad,Male,Human,- // 0 cm,- lb // 0 kg,,,,445
 Alex Woolsly,55,35,40,45,35,40,No,NBC - Heroes,good,Male,,- // 0 cm,- lb // 0 kg,,,,250
 Alfred Pennyworth,85,10,20,10,10,55,No,DC Comics,good,Male,Human,5'10 // 178 cm,160 lb // 72 kg,Blue,Black,,190
@@ -39,11 +39,11 @@ Aqualad,85,45,45,75,90,60,No,DC Comics,good,Male,Atlantean,5'10 // 178 cm,235 lb
 Aquaman,95,85,80,80,100,80,Yes,DC Comics,good,Male,Atlantean,6'1 // 185 cm,325 lb // 146 kg,Blue,Blond,,520
 Arachne,80,50,50,70,75,70,No,Marvel Comics,good,Female,Human,5'9 // 175 cm,140 lb // 63 kg,Blue,Blond,,395
 Archangel,85,15,60,65,35,45,Yes,Marvel Comics,good,Male,Mutant,6'0 // 183 cm,150 lb // 68 kg,Blue,Blond,Blue,305
-Arclight,75,65,25,45,55,70,No,Marvel Comics,bad,Female,,5'8 // 173 cm,126 lb // 57 kg,Violet,Purple,,335
-Ardina,85,100,100,80,100,25,No,Marvel Comics,good,Female,Alien,6'4 // 193 cm,218 lb // 98 kg,White,Orange,Gold,490
+Arclight,75,65,25,45,55,70,No,Marvel Comics,bad,Female,,5'8 // 173 cm,126 lb // 57 kg,Purple,Purple,,335
+Ardina,85,100,100,80,100,25,No,Marvel Comics,good,Female,Alien,6'4 // 193 cm,218 lb // 98 kg,White,Orange,Yellow,490
 Ares,90,85,35,80,85,105,No,Marvel Comics,good,Male,,6'1 // 185 cm,600 lb // 270 kg,Brown,Brown,,480
 Ares,90,100,75,100,100,100,No,DC Comics,neutral,Male,God / Eternal,6'10 // 208 cm,359 lb // 162 kg,Red,Black,,565
-Ariel,80,10,15,15,95,30,No,Marvel Comics,good,Female,,5'5 // 165 cm,130 lb // 59 kg,Purple,Pink,,245
+Ariel,80,10,15,15,95,30,No,Marvel Comics,good,Female,,5'5 // 165 cm,130 lb // 59 kg,Purple,Purple,,245
 Armor,80,65,15,80,55,55,No,Marvel Comics,good,Female,,5'4 // 163 cm,112 lb // 50 kg,Black,Black,,350
 Arsenal,80,55,60,60,65,85,Yes,DC Comics,good,Male,Human,- // 0 cm,- lb // 0 kg,,,,405
 Atlas,85,80,25,100,100,50,Yes,Marvel Comics,good,Male,Mutant,6'0 // 183 cm,225 lb // 101 kg,Brown,Red,,440
@@ -60,7 +60,7 @@ Azrael,85,20,20,20,35,80,No,DC Comics,good,Male,Human,- // 0 cm,- lb // 0 kg,Bro
 Aztar,95,95,95,95,95,90,Yes,DC Comics,good,Male,,- // 0 cm,- lb // 0 kg,,,,565
 Bananaman,60,50,35,80,30,30,No,,good,Male,Human,- // 0 cm,- lb // 0 kg,,,,285
 Bane,95,40,25,60,55,95,No,DC Comics,bad,Male,Human,6'8 // 203 cm,400 lb // 180 kg,,,,370
-Banshee,80,10,60,40,65,70,Yes,Marvel Comics,good,Male,Human,6'0 // 183 cm,170 lb // 77 kg,Green,Strawberry Blond,,325
+Banshee,80,10,60,40,65,70,Yes,Marvel Comics,good,Male,Human,6'0 // 183 cm,170 lb // 77 kg,Green,Auburn,,325
 Bantam,65,55,25,55,25,60,No,Marvel Comics,good,Male,,5'5 // 165 cm,119 lb // 54 kg,Brown,Black,,285
 Batgirl,70,45,50,40,45,70,Yes,DC Comics,good,Female,,- // 0 cm,- lb // 0 kg,,,,320
 Batgirl,95,15,35,40,35,90,Yes,DC Comics,good,Female,Human,5'7 // 170 cm,126 lb // 57 kg,Green,Red,,310
@@ -68,7 +68,7 @@ Batgirl III,80,65,70,70,65,90,Yes,DC Comics,good,Female,,- // 0 cm,- lb // 0 kg,
 Batgirl IV,85,15,30,60,50,100,Yes,DC Comics,good,Female,Human,5'5 // 165 cm,115 lb // 52 kg,Green,Black,,340
 Batgirl V,0,0,0,0,0,0,Yes,DC Comics,good,Female,,- // 0 cm,- lb // 0 kg,,,,240
 Batgirl VI,90,10,25,30,25,80,Yes,DC Comics,good,Female,,5'6 // 168 cm,135 lb // 61 kg,Blue,Blond,,260
-Batman,100,20,30,50,50,100,Yes,DC Comics,good,Male,Human,6'2 // 188 cm,210 lb // 95 kg,blue,black,,350
+Batman,100,20,30,50,50,100,Yes,DC Comics,good,Male,Human,6'2 // 188 cm,210 lb // 95 kg,Blue,Black,,350
 Batman,95,40,30,55,65,90,No,DC Comics,good,Male,Human,5'10 // 178 cm,170 lb // 77 kg,Blue,Black,,375
 Batman II,95,15,35,30,40,100,Yes,DC Comics,good,Male,Human,5'10 // 178 cm,175 lb // 79 kg,Blue,Black,,315
 Battlestar,80,55,35,75,50,75,No,Marvel Comics,good,Male,,6'6 // 198 cm,295 lb // 133 kg,Brown,Black,,370
@@ -115,7 +115,7 @@ Blackwulf,80,30,10,30,70,25,No,Marvel Comics,,Male,Alien,6'2 // 188 cm,195 lb //
 Blade,85,30,40,50,40,90,No,Marvel Comics,good,Male,Vampire,6'2 // 188 cm,215 lb // 97 kg,Brown,Black,,335
 Blaquesmith,0,0,0,0,0,0,Yes,Marvel Comics,good,Male,,- // 0 cm,- lb // 0 kg,Black,No Hair,,240
 Bling!,85,15,15,90,55,30,No,Marvel Comics,good,Female,,5'6 // 168 cm,152 lb // 68 kg,,,,290
-Blink,80,10,20,30,80,65,No,Marvel Comics,good,Female,Mutant,5'5 // 165 cm,125 lb // 56 kg,Green,Magenta,Pink,285
+Blink,80,10,20,30,80,65,No,Marvel Comics,good,Female,Mutant,5'5 // 165 cm,125 lb // 56 kg,Green,Purple,Pink,285
 Blizzard,75,75,60,70,85,65,No,Marvel Comics,bad,Male,,- // 0 cm,- lb // 0 kg,,,,430
 Blizzard,0,0,0,0,0,0,No,Marvel Comics,bad,Male,,- // 0 cm,- lb // 0 kg,,Brown,,240
 Blizzard II,75,10,30,45,50,60,No,Marvel Comics,bad,Male,,5'9 // 175 cm,170 lb // 77 kg,Brown,Brown,,270
@@ -132,16 +132,16 @@ Bolt,0,0,0,0,0,0,No,Marvel Comics,good,Male,,- // 0 cm,- lb // 0 kg,,,,240
 Bomb Queen,90,90,80,95,100,90,No,Image Comics,bad,Female,,- // 0 cm,- lb // 0 kg,,,,545
 Boom-Boom,75,10,15,45,60,65,Yes,Marvel Comics,good,Female,Mutant,5'5 // 165 cm,122 lb // 55 kg,Blue,Blond,,270
 Boomer,0,0,0,0,0,0,No,Marvel Comics,good,Female,,- // 0 cm,- lb // 0 kg,,,,240
-Booster Gold,85,85,45,70,100,40,No,DC Comics,good,Male,Human,6'5 // 196 cm,215 lb // 97 kg,Blue,Blond,,425
+Booster Yellow,85,85,45,70,100,40,No,DC Comics,good,Male,Human,6'5 // 196 cm,215 lb // 97 kg,Blue,Blond,,425
 Box,0,0,0,0,0,0,No,Marvel Comics,good,Male,,- // 0 cm,- lb // 0 kg,,,,240
 Box III,0,0,0,0,0,0,No,Marvel Comics,good,Male,,6'4 // 193 cm,245 lb // 110 kg,Blue,Blond,,240
-Box IV,80,75,25,30,15,60,Yes,Marvel Comics,good,Male,,- // 0 cm,- lb // 0 kg,Brown,Brown / Black,,285
+Box IV,80,75,25,30,15,60,Yes,Marvel Comics,good,Male,,- // 0 cm,- lb // 0 kg,Brown,Brown,,285
 Brainiac,100,95,65,90,60,75,No,DC Comics,bad,Male,Android,6'6 // 198 cm,300 lb // 135 kg,Green,No Hair,Green,485
 Brainiac 5,100,10,25,30,60,35,No,DC Comics,good,Male,,5'7 // 170 cm,135 lb // 61 kg,Green,Blond,,260
-Brother Voodoo,90,60,50,70,95,60,No,Marvel Comics,good,Male,Human,6'0 // 183 cm,220 lb // 99 kg,Brown,Brown / White,,425
+Brother Voodoo,90,60,50,70,95,60,No,Marvel Comics,good,Male,Human,6'0 // 183 cm,220 lb // 99 kg,Brown,Brown,,425
 Brundlefly,85,35,25,40,35,15,No,,neutral,Male,Mutant,6'4 // 193 cm,- lb // 0 kg,,,,235
 Buffy,85,30,45,70,50,60,No,Dark Horse Comics,good,Female,Human,5'2 // 157 cm,115 lb // 52 kg,Green,Blond,,340
-Bullseye,80,15,25,70,20,70,No,Marvel Comics,bad,Male,Human,6'0 // 183 cm,200 lb // 90 kg,blue,blond,,280
+Bullseye,80,15,25,70,20,70,No,Marvel Comics,bad,Male,Human,6'0 // 183 cm,200 lb // 90 kg,Blue,Blond,,280
 Bumblebee,85,30,25,10,50,35,No,DC Comics,good,Female,Human,5'7 // 170 cm,130 lb // 59 kg,Brown,Black,,235
 Bumbleboy,0,0,0,0,0,0,No,Marvel Comics,good,Male,,- // 0 cm,- lb // 0 kg,,,,240
 Bushido,75,10,10,10,20,70,No,DC Comics,good,Male,Human,- // 0 cm,- lb // 0 kg,,,,195
@@ -149,7 +149,7 @@ Cable,95,50,25,60,100,80,Yes,Marvel Comics,good,Male,Mutant,6'8 // 203 cm,350 lb
 Callisto,85,55,25,45,55,85,No,Marvel Comics,bad,Female,,5'9 // 175 cm,165 lb // 74 kg,Blue,Black,,350
 Cameron Hicks,80,10,25,30,55,70,No,SyFy,good,Male,Alpha,- // 0 cm,- lb // 0 kg,,,,270
 Cannonball,80,30,70,100,95,60,No,Marvel Comics,good,Male,,6'0 // 183 cm,181 lb // 81 kg,Blue,Blond,,435
-Captain America,85,20,40,55,60,100,Yes,Marvel Comics,good,Male,Human,6'2 // 188 cm,240 lb // 108 kg,blue,blond,,360
+Captain America,85,20,40,55,60,100,Yes,Marvel Comics,good,Male,Human,6'2 // 188 cm,240 lb // 108 kg,Blue,Blond,,360
 Captain Atom,95,95,85,90,100,80,No,DC Comics,good,Male,Human / Radiation,6'4 // 193 cm,200 lb // 90 kg,Blue,Silver,Silver,545
 Captain Britain,90,80,50,60,35,80,No,Marvel Comics,good,Male,Human,6'6 // 198 cm,257 lb // 116 kg,Blue,Blond,,395
 Captain Cold,80,10,20,20,30,20,Yes,DC Comics,neutral,Male,Human,- // 0 cm,- lb // 0 kg,Brown,Brown,,180
@@ -175,20 +175,20 @@ Cheetah,75,10,45,20,35,70,No,DC Comics,bad,Female,Human,5'4 // 163 cm,110 lb // 
 Cheetah II,75,20,45,20,40,60,No,DC Comics,bad,Female,Human,5'7 // 170 cm,122 lb // 55 kg,Green,Brown,,260
 Cheetah III,95,100,90,80,80,95,No,DC Comics,bad,Female,Human,5'9 // 175 cm,120 lb // 54 kg,Brown,Brown,,540
 Chewbacca,80,40,25,50,40,65,No,George Lucas,good,Male,Wookiee,7'5 // 226 cm,247 lb // 111 kg,Blue,Brown,,300
-Chromos,0,0,0,0,0,0,No,Team Epic TV,bad,Male,,6'1 // 185 cm,190 lb // 86 kg,Brown,Red / Grey,,240
+Chromos,0,0,0,0,0,0,No,Team Epic TV,bad,Male,,6'1 // 185 cm,190 lb // 86 kg,Brown,Red,,240
 Citizen Steel,80,95,35,100,25,60,Yes,DC Comics,good,Male,Human,6'0 // 183 cm,378 lb // 170 kg,Green,Red,,395
 Claire Bennet,75,10,15,100,90,30,No,NBC - Heroes,good,Female,,- // 0 cm,- lb // 0 kg,Blue,Blond,,320
 Clea,70,40,45,40,75,35,Yes,Marvel Comics,good,Female,,- // 0 cm,- lb // 0 kg,,White,,305
-Cloak,85,10,50,65,100,60,Yes,Marvel Comics,good,Male,,7'5 // 226 cm,155 lb // 70 kg,brown,black,,370
+Cloak,85,10,50,65,100,60,Yes,Marvel Comics,good,Male,,7'5 // 226 cm,155 lb // 70 kg,Brown,Black,,370
 Clock King,90,10,20,10,10,40,No,DC Comics,bad,Male,Human,5'10 // 178 cm,173 lb // 78 kg,Blue,Black,,180
 Cogliostro,70,65,60,80,80,60,Yes,Image Comics,bad,Male,,- // 0 cm,- lb // 0 kg,,,,415
 Colin Wagner,0,0,0,0,0,0,No,HarperCollins,good,Male,,- // 0 cm,- lb // 0 kg,Grey,Brown,,240
 Colossal Boy,0,0,0,0,0,0,No,DC Comics,good,Male,,- // 0 cm,- lb // 0 kg,,,,240
-Colossus,85,85,35,100,45,80,Yes,Marvel Comics,good,Male,Mutant,7'5 // 226 cm,500 lb // 225 kg,Silver,Black,,430
+Colossus,85,85,35,100,45,80,Yes,Marvel Comics,good,Male,Mutant,7'5 // 226 cm,500 lb // 225 kg,Grey,Black,,430
 Copycat,80,10,25,25,55,60,No,Marvel Comics,neutral,Female,Mutant,6'0 // 183 cm,148 lb // 67 kg,Red,White,Blue,255
 Corsair,70,35,45,35,45,75,No,Marvel Comics,good,Male,,6'3 // 191 cm,175 lb // 79 kg,Brown,Brown,,305
 Cottonmouth,80,10,10,10,30,25,No,Marvel Comics,bad,Male,Human,6'0 // 183 cm,220 lb // 99 kg,Brown,Black,,165
-Crimson Crusader,60,60,40,65,85,65,No,Marvel Comics,good,Male,,- // 0 cm,- lb // 0 kg,Blue,Strawberry Blond,,375
+Crimson Crusader,60,60,40,65,85,65,No,Marvel Comics,good,Male,,- // 0 cm,- lb // 0 kg,Blue,Auburn,,375
 Crimson Dynamo,85,70,60,75,80,65,No,Marvel Comics,good,Male,,5'11 // 180 cm,230 lb // 104 kg,Brown,No Hair,,435
 Crystal,85,20,15,15,65,60,No,Marvel Comics,good,Female,Inhuman,5'6 // 168 cm,110 lb // 50 kg,Green,Red,,260
 Curse,0,0,0,0,0,0,No,Image Comics,bad,Male,,- // 0 cm,- lb // 0 kg,,,,240
@@ -205,7 +205,7 @@ Darkhawk,80,35,35,70,75,65,No,Marvel Comics,good,Male,Human,6'1 // 185 cm,180 lb
 Darkman,95,15,25,60,20,30,No,Universal Studios,good,Male,Human,- // 0 cm,- lb // 0 kg,,,,245
 Darkseid,95,100,85,100,100,95,Yes,DC Comics,bad,Male,New God,8'9 // 267 cm,1815 lb // 817 kg,Red,No Hair,Grey,575
 Darkstar,75,10,35,45,80,65,No,Marvel Comics,good,Female,Mutant,5'6 // 168 cm,125 lb // 56 kg,Brown,Blond,,310
-Darth Maul,80,50,50,30,100,100,No,George Lucas,bad,Male,Dathomirian Zabrak,5'7 // 170 cm,- lb // 0 kg,Yellow / Red,,Red / Black,410
+Darth Maul,80,50,50,30,100,100,No,George Lucas,bad,Male,Dathomirian Zabrak,5'7 // 170 cm,- lb // 0 kg,Yellow,,Red,410
 Darth Vader,85,50,35,35,100,100,Yes,George Lucas,bad,Male,Cyborg,6'6 // 198 cm,300 lb // 135 kg,Yellow,No Hair,,405
 Dash,65,15,95,60,20,30,No,Dark Horse Comics,good,Male,Human,4'0 // 122 cm,60 lb // 27 kg,Blue,Blond,,285
 Data,100,35,25,40,60,50,No,Star Trek,good,Male,Android,- // 0 cm,- lb // 0 kg,Yellow,Brown,,310
@@ -251,7 +251,7 @@ Fabian Cortez,0,0,0,0,0,0,No,Marvel Comics,bad,Male,,6'5 // 196 cm,214 lb // 96 
 Falcon,75,15,50,30,25,65,Yes,Marvel Comics,good,Male,Human,6'2 // 188 cm,240 lb // 108 kg,Brown,Black,,260
 Fallen One II,95,85,85,100,100,60,No,Marvel Comics,bad,Male,,- // 0 cm,- lb // 0 kg,Black,Blue,,525
 Faora,95,95,75,100,100,90,No,DC Comics,bad,Female,Kryptonian,- // 0 cm,- lb // 0 kg,,,,555
-Feral,75,30,45,30,30,70,No,Marvel Comics,good,Female,,5'9 // 175 cm,110 lb // 50 kg,Yellow,Orange / White,,280
+Feral,75,30,45,30,30,70,No,Marvel Comics,good,Female,,5'9 // 175 cm,110 lb // 50 kg,Yellow,Orange,,280
 Fighting Spirit,0,0,0,0,0,0,No,DC Comics,good,Female,,- // 0 cm,- lb // 0 kg,,Red,,240
 Fin Fang Foom,80,85,25,100,75,70,No,Marvel Comics,good,Male,Kakarantharaian,32'0 // 975 cm,40000 lb // 18000 kg,Red,No Hair,Green,435
 Firebird,75,10,40,15,100,45,No,Marvel Comics,good,Female,,5'5' // 165 cm,125 lb // 56 kg,Brown,Black,,285
@@ -260,7 +260,7 @@ Firestar,80,10,55,55,75,35,No,Marvel Comics,good,Female,Mutant,5'8 // 173 cm,125
 Firestorm,80,55,60,60,100,45,No,DC Comics,good,Male,,- // 0 cm,- lb // 0 kg,Brown,Black,,400
 Firestorm,75,80,60,80,100,40,Yes,DC Comics,good,Male,Human,6'2 // 188 cm,202 lb // 91 kg,Blue,Auburn,,435
 Fixer,90,70,70,75,70,65,No,Marvel Comics,bad,Male,,- // 0 cm,- lb // 0 kg,Red,No Hair,,440
-Flash,85,10,100,50,70,35,Yes,DC Comics,good,Male,Human,5'11 // 180 cm,179 lb // 81 kg,Blue,Brown / White,,350
+Flash,85,10,100,50,70,35,Yes,DC Comics,good,Male,Human,5'11 // 180 cm,179 lb // 81 kg,Blue,Brown,,350
 Flash II,95,50,100,60,100,60,Yes,DC Comics,good,Male,Human,6'0 // 183 cm,195 lb // 88 kg,Blue,Blond,,465
 Flash III,85,10,100,60,100,35,Yes,DC Comics,good,Male,Human,6'0 // 183 cm,190 lb // 86 kg,,,,390
 Flash IV,85,10,100,35,100,50,Yes,DC Comics,good,Male,Human,5'2 // 157 cm,115 lb // 52 kg,Yellow,Auburn,,380
@@ -324,7 +324,7 @@ Hawkwoman III,75,80,85,85,80,90,No,DC Comics,good,Female,,5'7 // 170 cm,145 lb /
 He-Man,90,100,75,90,75,85,No,Mattel,good,Male,Human,- // 0 cm,- lb // 0 kg,,,,515
 Heat Wave,75,10,20,45,30,30,No,DC Comics,bad,Male,Human,5'11 // 180 cm,179 lb // 81 kg,Blue,No Hair,,210
 Hela,85,100,50,100,100,45,No,Marvel Comics,bad,Female,Asgardian,7'0 // 213 cm,500 lb // 225 kg,Green,Black,,480
-Hellboy,85,55,25,95,75,75,Yes,Dark Horse Comics,good,Male,Demon,8'6 // 259 cm,350 lb // 158 kg,Gold,Black,,410
+Hellboy,85,55,25,95,75,75,Yes,Dark Horse Comics,good,Male,Demon,8'6 // 259 cm,350 lb // 158 kg,Yellow,Black,,410
 Hellcat,85,15,35,45,50,70,No,Marvel Comics,good,Female,Human,5'8 // 173 cm,135 lb // 61 kg,Blue,Red,,300
 Hellstorm,80,65,60,75,90,65,No,Marvel Comics,good,Male,,6'1' // 185 cm,180 lb // 81 kg,Red,Red,,435
 Hercules,85,100,50,85,90,100,No,Marvel Comics,good,Male,Demi-God,6'5 // 196 cm,325 lb // 146 kg,Blue,Brown,,510
@@ -344,16 +344,16 @@ Hyperion,95,100,100,95,90,80,No,Marvel Comics,good,Male,Eternal,6'0 // 183 cm,46
 Iceman,85,35,55,100,100,65,Yes,Marvel Comics,good,Male,Mutant,5'8 // 173 cm,145 lb // 65 kg,Brown,Brown,,440
 Impulse,80,10,100,60,75,60,Yes,DC Comics,good,Male,Human,5'7 // 170 cm,145 lb // 65 kg,Yellow,Auburn,,385
 Indiana Jones,85,10,20,30,20,30,No,George Lucas,good,Male,Human,6'0 // 183 cm,176 lb // 79 kg,,,,195
-Indigo,90,65,50,50,100,50,No,DC Comics,neutral,Female,Alien,- // 0 cm,- lb // 0 kg,,Purple,,405
+Purple,90,65,50,50,100,50,No,DC Comics,neutral,Female,Alien,- // 0 cm,- lb // 0 kg,,Purple,,405
 Ink,75,30,20,40,75,50,No,Marvel Comics,good,Male,Mutant,5'11 // 180 cm,180 lb // 81 kg,Blue,No Hair,,290
-Invisible Woman,95,10,30,85,95,60,No,Marvel Comics,good,Female,Human / Radiation,5'6 // 168 cm,120 lb // 54 kg,blue,Blond,,375
+Invisible Woman,95,10,30,85,95,60,No,Marvel Comics,good,Female,Human / Radiation,5'6 // 168 cm,120 lb // 54 kg,Blue,Blond,,375
 Iron Fist,90,55,35,50,95,100,No,Marvel Comics,good,Male,Human,5'11 // 180 cm,175 lb // 79 kg,Blue,Blond,,425
 Iron Man,100,85,60,85,100,65,Yes,Marvel Comics,good,Male,Human,6'6 // 198 cm,425 lb // 191 kg,Blue,Black,,495
 Iron Monger,95,65,25,90,60,60,Yes,Marvel Comics,bad,Male,,- // 0 cm,4230 lb // 2000 kg,Blue,No Hair,,395
 Isis,90,50,75,50,50,60,No,DC Comics,good,Female,,- // 0 cm,- lb // 0 kg,,,,375
-Jack of Hearts,85,55,100,30,80,30,No,Marvel Comics,good,Male,Human,5'1 // 155 cm,175 lb // 79 kg,Blue / White,Brown,,380
+Jack of Hearts,85,55,100,30,80,30,No,Marvel Comics,good,Male,Human,5'1 // 155 cm,175 lb // 79 kg,Blue,Brown,,380
 Jack-Jack,35,35,70,80,100,10,No,Dark Horse Comics,good,Male,Human,2'4 // 71 cm,30 lb // 14 kg,Blue,Brown,,330
-James Bond (Craig),95,15,20,35,25,90,Yes,Ian Fleming,good,Male,Human,6'0 // 183 cm,- lb // 0 kg,blue,Blond,,280
+James Bond (Craig),95,15,20,35,25,90,Yes,Ian Fleming,good,Male,Human,6'0 // 183 cm,- lb // 0 kg,Blue,Blond,,280
 James T. Kirk,85,15,20,30,30,75,No,Star Trek,good,Male,Human,5'10 // 178 cm,170 lb // 77 kg,Hazel,Brown,,255
 Jar Jar Binks,60,10,35,10,25,15,No,George Lucas,good,Male,Gungan,6'4 // 193 cm,- lb // 0 kg,Yellow,,Orange / White,155
 Jason Voorhees,85,35,25,100,100,50,Yes,Dark Horse Comics,bad,Male,Human,6'3 // 191 cm,250 lb // 113 kg,Brown,Red,,395
@@ -402,14 +402,14 @@ Lady Bullseye,90,75,80,80,75,100,No,Marvel Comics,bad,Female,,- // 0 cm,- lb // 
 Lady Deathstrike,85,30,45,85,50,90,No,Marvel Comics,bad,Female,Cyborg,5'9 // 175 cm,128 lb // 58 kg,Brown,Black,,385
 Leader,100,10,15,15,60,45,No,Marvel Comics,bad,Male,,5'10 // 178 cm,140 lb // 63 kg,Green,No Hair,,245
 Leech,65,5,15,15,65,15,No,Marvel Comics,good,Male,,- // 0 cm,- lb // 0 kg,,,,180
-Legion,80,100,45,30,100,75,No,Marvel Comics,good,Male,Mutant,5'9 // 175 cm,130 lb // 59 kg,Green / Blue,Black,,430
+Legion,80,100,45,30,100,75,No,Marvel Comics,good,Male,Mutant,5'9 // 175 cm,130 lb // 59 kg,Green,Black,,430
 Leonardo,90,20,50,65,60,80,No,IDW Publishing,good,Male,Mutant,- // 0 cm,- lb // 0 kg,Blue,No Hair,Green,365
 Lex Luthor,100,55,25,65,70,70,No,DC Comics,bad,Male,Human,6'2' // 188 cm,210 lb // 95 kg,Green,No Hair,,385
 Light Lass,75,10,35,30,70,45,No,DC Comics,good,Female,,5'5 // 165 cm,120 lb // 54 kg,Blue,Red,,265
 Lightning Lad,75,10,25,30,60,45,No,DC Comics,good,Male,,5'1 // 155 cm,145 lb // 65 kg,Blue,Red,,245
 Lightning Lord,75,10,25,45,70,45,No,DC Comics,bad,Male,,6'3 // 191 cm,210 lb // 95 kg,Blue,Red,,270
 Living Brain,90,55,35,60,35,30,No,Marvel Comics,bad,Other,,6'6 // 198 cm,800 lb // 360 kg,Yellow,,,305
-Living Tribunal,100,100,100,100,100,30,No,Marvel Comics,neutral,Male,Cosmic Entity,- // 0 cm,- lb // 0 kg,Blue,No Hair,Gold,530
+Living Tribunal,100,100,100,100,100,30,No,Marvel Comics,neutral,Male,Cosmic Entity,- // 0 cm,- lb // 0 kg,Blue,No Hair,Yellow,530
 Liz Sherman,55,35,30,45,75,50,No,Dark Horse Comics,good,Female,,- // 0 cm,- lb // 0 kg,,,,290
 Lizard,80,55,60,70,80,60,Yes,Marvel Comics,bad,Male,Human,6'8 // 203 cm,510 lb // 230 kg,Red,No Hair,,405
 Lobo,100,100,55,100,100,85,No,DC Comics,neutral,Male,Czarnian,7'6 // 229 cm,640 lb // 288 kg,Red,Black,Blue-White,540
@@ -469,12 +469,12 @@ Mogo,80,85,85,95,95,70,No,DC Comics,good,Male,Planet,- // 0 cm,- lb // 0 kg,,,,5
 Mohinder Suresh,0,0,0,0,0,0,No,NBC - Heroes,good,Male,,- // 0 cm,- lb // 0 kg,,,,240
 Molecule Man,85,100,70,90,100,70,No,Marvel Comics,bad,Male,Human / Radiation,5'7 // 170 cm,140 lb // 63 kg,Blue,Brown,,515
 Moloch,75,40,35,40,70,45,No,DC Comics,bad,Male,,- // 0 cm,- lb // 0 kg,,,,305
-Molten Man,80,75,25,85,55,60,No,Marvel Comics,bad,Male,,6'5 // 196 cm,550 lb // 248 kg,Gold,Gold,,380
+Molten Man,80,75,25,85,55,60,No,Marvel Comics,bad,Male,,6'5 // 196 cm,550 lb // 248 kg,Yellow,Yellow,,380
 Monarch,95,100,100,100,100,95,No,DC Comics,good,Male,,6'4 // 193 cm,200 lb // 90 kg,Blue,White,,590
 Monica Dawson,80,10,35,15,50,90,No,NBC - Heroes,good,Female,,- // 0 cm,- lb // 0 kg,,,,280
 Moon Knight,80,40,25,45,30,75,No,Marvel Comics,good,Male,Human,6'2 // 188 cm,225 lb // 101 kg,Brown,Brown,,295
 Moonstone,80,70,50,55,75,80,Yes,Marvel Comics,bad,Female,,5'11 // 180 cm,130 lb // 59 kg,Blue,Blond,,410
-Morlun,85,60,35,45,75,60,No,Marvel Comics,bad,Male,,6'2 // 188 cm,175 lb // 79 kg,White / Red,Black,,360
+Morlun,85,60,35,45,75,60,No,Marvel Comics,bad,Male,,6'2 // 188 cm,175 lb // 79 kg,White,Black,,360
 Morph,65,50,40,65,70,50,No,Marvel Comics,good,Male,,5'10 // 178 cm,175 lb // 79 kg,White,No Hair,,340
 Moses Magnum,90,30,15,45,55,60,No,Marvel Comics,bad,Male,,5'9 // 175 cm,159 lb // 72 kg,Brown,Black,,295
 Mr Immortal,80,10,10,100,70,30,No,Marvel Comics,good,Male,Mutant,6'2 // 188 cm,156 lb // 70 kg,Blue,Blond,,300
@@ -482,7 +482,7 @@ Mr Incredible,80,85,35,95,30,40,No,Dark Horse Comics,good,Male,Human,6'7 // 201 
 Ms Marvel II,75,65,25,85,15,60,Yes,Marvel Comics,good,Female,,5'8 // 173 cm,135 lb // 61 kg,Blue,Red,,325
 Multiple Man,85,15,25,70,30,65,No,Marvel Comics,good,Male,,5'11' // 180 cm,155 lb // 70 kg,Blue,Brown,,290
 Mysterio,95,10,20,40,85,70,No,Marvel Comics,bad,Male,Human,5'11 // 180 cm,175 lb // 79 kg,Brown,No Hair,,320
-Mystique,90,15,25,65,65,75,No,Marvel Comics,bad,Female,Mutant,5'10 // 178 cm,120 lb // 54 kg,Yellow,Red / Orange,Blue,335
+Mystique,90,15,25,65,65,75,No,Marvel Comics,bad,Female,Mutant,5'10 // 178 cm,120 lb // 54 kg,Yellow,Red,Blue,335
 Namor,0,0,0,0,0,0,No,Marvel Comics,good,Male,,- // 0 cm,- lb // 0 kg,,,,240
 Namor,85,95,60,70,75,85,Yes,Marvel Comics,good,Male,Atlantean,6'2 // 188 cm,278 lb // 125 kg,Grey,Black,,470
 Namora,80,85,45,45,50,65,No,Marvel Comics,good,Female,,5'11 // 180 cm,189 lb // 85 kg,Blue,Blond,,370
@@ -491,15 +491,15 @@ Naruto Uzumaki,75,90,75,80,100,100,No,Shueisha,good,Male,Human,5'10 // 178 cm,12
 Nathan Petrelli,0,0,0,0,0,0,No,NBC - Heroes,good,Male,,- // 0 cm,- lb // 0 kg,Brown,,,240
 Nebula,85,55,15,50,45,60,No,Marvel Comics,bad,Female,Luphomoid,6'1 // 185 cm,185 lb // 83 kg,Blue,No Hair,Blue,310
 Negasonic Teenage Warhead,80,10,10,10,45,35,Yes,Marvel Comics,good,Female,Mutant,- // 0 cm,- lb // 0 kg,Black,Black,,190
-Nick Fury,90,15,25,45,25,100,No,Marvel Comics,good,Male,Human,6'1 // 185 cm,221 lb // 99 kg,Brown,Brown / White,,300
-Nightcrawler,80,10,50,15,80,80,Yes,Marvel Comics,good,Male,,5'9' // 175 cm,195 lb // 88 kg,Yellow,Indigo,,315
+Nick Fury,90,15,25,45,25,100,No,Marvel Comics,good,Male,Human,6'1 // 185 cm,221 lb // 99 kg,Brown,Brown,,300
+Nightcrawler,80,10,50,15,80,80,Yes,Marvel Comics,good,Male,,5'9' // 175 cm,195 lb // 88 kg,Yellow,Purple,,315
 Nightwing,95,15,35,30,40,100,Yes,DC Comics,good,Male,Human,5'10 // 178 cm,175 lb // 79 kg,Blue,Black,,315
 Niki Sanders,85,55,35,30,40,60,No,NBC - Heroes,good,Female,,- // 0 cm,- lb // 0 kg,Blue,Blond,,305
 Nina Theroux,85,5,10,10,70,20,No,SyFy,good,Female,Alpha,- // 0 cm,- lb // 0 kg,,,,200
 Nite Owl II,85,45,40,40,50,80,No,DC Comics,good,Male,,- // 0 cm,- lb // 0 kg,,,,340
 Northstar,80,20,85,60,65,70,No,Marvel Comics,good,Male,,5'11 // 180 cm,185 lb // 83 kg,Blue,Black,,380
 Nova,100,85,75,100,100,80,No,Marvel Comics,good,Male,Human,6'1 // 185 cm,190 lb // 86 kg,Brown,Brown,,540
-Nova,85,60,100,100,100,35,No,Marvel Comics,good,Female,Human / Cosmic,5'4 // 163 cm,130 lb // 59 kg,White,Red,Gold,480
+Nova,85,60,100,100,100,35,No,Marvel Comics,good,Female,Human / Cosmic,5'4 // 163 cm,130 lb // 59 kg,White,Red,Yellow,480
 Odin,100,85,70,95,100,90,Yes,Marvel Comics,good,Male,God / Eternal,6'9 // 206 cm,650 lb // 293 kg,Blue,White,,540
 Offspring,80,10,35,100,100,60,No,DC Comics,good,Male,,- // 0 cm,- lb // 0 kg,,,,385
 Omega Red,70,70,50,85,70,90,No,Marvel Comics,bad,Male,,6'11 // 211 cm,425 lb // 191 kg,Red,Blond,,435
@@ -528,11 +528,11 @@ Plastic Man,80,65,25,100,100,60,No,DC Comics,good,Male,Human,6'1 // 185 cm,178 l
 Plastique,80,10,25,30,60,45,No,DC Comics,bad,Female,,5'6 // 168 cm,123 lb // 55 kg,Blue,Red,,250
 Poison Ivy,95,15,30,70,100,70,No,DC Comics,bad,Female,Human,5'6 // 168 cm,110 lb // 50 kg,Green,Red,Green,380
 Polaris,85,75,45,50,100,45,No,Marvel Comics,good,Female,Mutant,5'7 // 170 cm,115 lb // 52 kg,Green,Green,,400
-Power Girl,100,100,100,100,100,75,No,DC Comics,good,Female,Kryptonian,5'11 // 180 cm,180 lb // 81 kg,blue,blond,,575
+Power Girl,100,100,100,100,100,75,No,DC Comics,good,Female,Kryptonian,5'11 // 180 cm,180 lb // 81 kg,Blue,Blond,,575
 Power Man,50,80,40,90,50,80,Yes,Marvel Comics,good,Male,Mutant,- // 0 cm,- lb // 0 kg,,,,390
 Predator,85,30,25,85,100,90,No,Dark Horse Comics,bad,Male,Yautja,7'0 // 213 cm,520 lb // 234 kg,,,,415
 Professor X,100,10,15,15,100,35,Yes,Marvel Comics,good,Male,Mutant,6' // 183 cm,190 lb // 86 kg,Blue,No Hair,,275
-Professor Zoom,100,10,100,20,85,20,Yes,DC Comics,bad,Male,Human,5'11 // 180 cm,179 lb // 81 kg,Blue,Strawberry Blond,,335
+Professor Zoom,100,10,100,20,85,20,Yes,DC Comics,bad,Male,Human,5'11 // 180 cm,179 lb // 81 kg,Blue,Auburn,,335
 Proto-Goblin,85,40,25,50,25,30,No,Marvel Comics,bad,Male,,- // 0 cm,- lb // 0 kg,Green,Blond,,255
 Psylocke,85,35,25,40,100,90,Yes,Marvel Comics,good,Female,Mutant,5'11 // 180 cm,155 lb // 70 kg,Blue,Purple,,375
 Punisher,85,20,25,45,45,100,Yes,Marvel Comics,good,Male,Human,6'0' // 183 cm,200 lb // 90 kg,Blue,Black,,320
@@ -547,7 +547,7 @@ Quill,75,10,15,15,25,15,No,Marvel Comics,good,Male,,5'4 // 163 cm,124 lb // 56 k
 Ra's Al Ghul,100,30,35,45,30,100,No,DC Comics,bad,Male,Human,6'4 // 193 cm,215 lb // 97 kg,Green,Grey,,340
 Rachel Pirzad,85,5,10,10,55,10,No,SyFy,good,Female,Alpha,- // 0 cm,- lb // 0 kg,,,,175
 Raphael,85,20,50,65,60,80,No,IDW Publishing,good,Male,Mutant,- // 0 cm,- lb // 0 kg,,No Hair,Green,360
-Raven,80,10,30,70,85,40,No,DC Comics,neutral,Female,Human,5'5 // 165 cm,110 lb // 50 kg,Indigo,Black,,315
+Raven,80,10,30,70,85,40,No,DC Comics,neutral,Female,Human,5'5 // 165 cm,110 lb // 50 kg,Purple,Black,,315
 Ray,80,10,95,100,100,20,No,DC Comics,good,Male,Human,5'10 // 178 cm,155 lb // 70 kg,Green,Red,,405
 Razor-Fist II,70,85,80,80,85,100,No,Marvel Comics,bad,Male,,6'3 // 191 cm,260 lb // 117 kg,Blue,No Hair,,500
 Red Arrow,85,20,25,20,25,80,No,DC Comics,good,Male,Human,5'11 // 180 cm,185 lb // 83 kg,Green,Red,,255
@@ -573,7 +573,7 @@ Robin V,85,10,35,20,30,65,Yes,DC Comics,good,Male,Human,4'6 // 137 cm,84 lb // 3
 Robin VI,80,10,25,20,20,70,No,DC Comics,neutral,Female,Human,- // 0 cm,- lb // 0 kg,Green,Red,,225
 Robocop,90,35,15,80,55,50,No,,good,Male,Cyborg,6'2 // 188 cm,- lb // 0 kg,,,,325
 Rocket Raccoon,80,5,25,30,30,65,No,Marvel Comics,good,Male,Animal,4'0 // 122 cm,55 lb // 25 kg,Brown,Brown,,235
-Rogue,90,10,15,30,80,80,Yes,Marvel Comics,good,Female,,5'8 // 173 cm,120 lb // 54 kg,Green,Brown / White,,305
+Rogue,90,10,15,30,80,80,Yes,Marvel Comics,good,Female,,5'8 // 173 cm,120 lb // 54 kg,Green,Brown,,305
 Ronin,80,15,25,10,15,80,Yes,Marvel Comics,good,Male,Human,6'3 // 191 cm,230 lb // 104 kg,Blue,Blond,,225
 Rorschach,90,10,30,20,25,80,No,DC Comics,good,Male,Human,5'6 // 168 cm,140 lb // 63 kg,Blue,Red,,255
 Sabretooth,80,50,40,90,50,100,Yes,Marvel Comics,bad,Male,Mutant,6'6 // 198 cm,380 lb // 171 kg,Amber,Blond,,410
@@ -601,7 +601,7 @@ She-Hulk,95,100,45,100,40,70,Yes,Marvel Comics,good,Female,Human,6'7 // 201 cm,7
 She-Ra,90,100,45,70,100,70,No,Mattel,good,Female,Human,- // 0 cm,- lb // 0 kg,,,,475
 She-Thing,85,75,25,80,25,65,Yes,Marvel Comics,good,Female,Human / Radiation,6'0 // 183 cm,340 lb // 153 kg,Blue,No Hair,,355
 Shocker,85,10,25,70,80,60,Yes,Marvel Comics,bad,Male,Human,5'9 // 175 cm,175 lb // 79 kg,Brown,Brown,,330
-Shriek,80,10,25,30,45,45,No,Marvel Comics,good,Female,,5'8 // 173 cm,115 lb // 52 kg,Yellow / Blue,Black,,235
+Shriek,80,10,25,30,45,45,No,Marvel Comics,good,Female,,5'8 // 173 cm,115 lb // 52 kg,Yellow,Black,,235
 Shrinking Violet,0,0,0,0,0,0,No,DC Comics,good,Female,,- // 0 cm,- lb // 0 kg,,,,240
 Sif,85,90,70,80,100,70,Yes,Marvel Comics,good,Female,Asgardian,6'2 // 188 cm,425 lb // 191 kg,Blue,Black,,495
 Silk,90,50,75,70,75,65,No,Marvel Comics,good,Female,Human,- // 0 cm,- lb // 0 kg,Brown,Black,,425
@@ -612,13 +612,13 @@ Silverclaw,80,30,35,45,35,45,No,Marvel Comics,good,Female,,5'2 // 157 cm,110 lb 
 Sinestro,90,85,55,65,100,55,Yes,DC Comics,neutral,Male,Korugaran,6'7 // 201 cm,205 lb // 92 kg,Black,Black,Red,450
 Siren,80,65,80,60,95,60,No,DC Comics,bad,Female,Atlantean,5'9 // 175 cm,160 lb // 72 kg,Blue,Purple,,440
 Siren II,0,0,0,0,0,0,No,DC Comics,bad,Female,,- // 0 cm,- lb // 0 kg,Black,,,240
-Siryn,75,10,50,30,50,45,No,Marvel Comics,bad,Female,,5'6 // 168 cm,115 lb // 52 kg,Blue,Strawberry Blond,,260
+Siryn,75,10,50,30,50,45,No,Marvel Comics,bad,Female,,5'6 // 168 cm,115 lb // 52 kg,Blue,Auburn,,260
 Skaar,80,85,30,90,70,85,No,Marvel Comics,good,Male,,6'6 // 198 cm,400 lb // 180 kg,Green,Black,,440
 Snake-Eyes,0,0,0,0,0,0,No,Marvel Comics,bad,Male,Animal,- // 0 cm,- lb // 0 kg,,,,240
 Snowbird,80,35,30,45,70,55,No,Marvel Comics,good,Female,,5'10' // 178 cm,108 lb // 49 kg,White,Blond,,315
 Sobek,80,35,25,50,20,60,No,DC Comics,good,Male,,- // 0 cm,- lb // 0 kg,White,No Hair,,270
 Solomon Grundy,55,95,15,100,95,30,No,DC Comics,bad,Male,Zombie,9'2 // 279 cm,971 lb // 437 kg,Black,White,,390
-Songbird,90,40,30,45,55,60,No,Marvel Comics,good,Female,,5'5 // 165 cm,145 lb // 65 kg,Green,Red / White,,320
+Songbird,90,40,30,45,55,60,No,Marvel Comics,good,Female,,5'5 // 165 cm,145 lb // 65 kg,Green,Red,,320
 Space Ghost,75,20,35,40,95,80,No,DC Comics,good,Male,Human,6'2 // 188 cm,250 lb // 113 kg,,,,345
 Spawn,90,75,50,100,100,100,Yes,Image Comics,good,Male,Demon,6'11 // 211 cm,900 lb // 405 kg,Brown,Black,,515
 Spectre,95,100,100,100,100,70,Yes,DC Comics,good,Male,God / Eternal,- // 0 cm,- lb // 0 kg,White,No Hair,White,565
@@ -648,9 +648,9 @@ Stephanie Powell,85,10,55,10,25,10,No,ABC Studios,good,Female,,- // 0 cm,- lb //
 Steppenwolf,100,100,85,100,100,100,No,DC Comics,bad,Male,New God,6'0 // 183 cm,203 lb // 91 kg,Red,Black,White,585
 Storm,90,10,50,30,90,75,Yes,Marvel Comics,good,Female,Mutant,5'11 // 180 cm,127 lb // 57 kg,Blue,White,,345
 Stormtrooper,60,10,10,15,5,20,No,George Lucas,bad,Male,Human,6'0 // 183 cm,- lb // 0 kg,,,,120
-Sunspot,85,65,35,25,90,70,No,Marvel Comics,good,Male,Mutant,5'8 // 173 cm,170 lb // 77 kg,brown,black,,370
+Sunspot,85,65,35,25,90,70,No,Marvel Comics,good,Male,Mutant,5'8 // 173 cm,170 lb // 77 kg,Brown,Black,,370
 Superboy,90,95,85,90,95,60,No,DC Comics,good,Male,,5'7 // 170 cm,150 lb // 68 kg,Blue,Black,,515
-Superboy-Prime,100,100,100,100,100,85,Yes,DC Comics,bad,Male,Kryptonian,5'11 // 180 cm,170 lb // 77 kg,Blue,Black / Blue,,585
+Superboy-Prime,100,100,100,100,100,85,Yes,DC Comics,bad,Male,Kryptonian,5'11 // 180 cm,170 lb // 77 kg,Blue,Black,,585
 Supergirl,100,100,100,100,100,75,Yes,DC Comics,good,Female,Kryptonian,5'5 // 165 cm,120 lb // 54 kg,Blue,Blond,,575
 Superman,100,100,100,100,100,85,Yes,DC Comics,good,Male,Kryptonian,6'3 // 191 cm,225 lb // 101 kg,Blue,Black,,585
 Surtur,95,100,60,100,100,80,Yes,Marvel Comics,bad,Male,God / Eternal,1000 // 30480 cm,- lb // 0 kg,Yellow,Red,Red,535
@@ -692,12 +692,12 @@ Two-Face,95,10,15,15,10,30,Yes,DC Comics,bad,Male,,6'0 // 183 cm,182 lb // 82 kg
 Ultragirl,80,80,35,70,35,80,No,Marvel Comics,good,Female,,5'6 // 168 cm,233 lb // 105 kg,Blue,Blond,,380
 Ultron,95,85,45,100,100,65,Yes,Marvel Comics,bad,Male,Android,6'9 // 206 cm,735 lb // 331 kg,Red,,Silver,490
 Utgard-Loki,80,80,25,85,85,65,No,Marvel Comics,bad,Male,Frost Giant,50'0 // 1520 cm,128000 lb // 58000 kg,Blue,White,,420
-Vagabond,0,0,0,0,0,0,No,Marvel Comics,good,Female,,5'6' // 168 cm,120 lb // 54 kg,Blue,Strawberry Blond,,240
+Vagabond,0,0,0,0,0,0,No,Marvel Comics,good,Female,,5'6' // 168 cm,120 lb // 54 kg,Blue,Auburn,,240
 Valerie Hart,0,0,0,0,0,0,No,Team Epic TV,good,Female,,5'9 // 175 cm,125 lb // 56 kg,Hazel,Black,,240
 Valkyrie,75,85,75,85,75,95,Yes,Marvel Comics,good,Female,,6'3 // 191 cm,475 lb // 214 kg,Blue,Blond,,490
 Vanisher,85,10,75,60,65,45,No,Marvel Comics,bad,Male,,5'5 // 165 cm,175 lb // 79 kg,Green,No Hair,,340
 Vegeta,95,100,95,95,100,100,No,Shueisha,bad,Male,Saiyan,5'6 // 168 cm,163 lb // 73 kg,,Black,,585
-Venom,90,60,65,85,90,85,Yes,Marvel Comics,bad,Male,Symbiote,6'3 // 191 cm,260 lb // 117 kg,Blue,Strawberry Blond,,475
+Venom,90,60,65,85,90,85,Yes,Marvel Comics,bad,Male,Symbiote,6'3 // 191 cm,260 lb // 117 kg,Blue,Auburn,,475
 Venom II,80,60,50,70,55,60,No,Marvel Comics,bad,Male,,5'9 // 175 cm,110 lb // 50 kg,Brown,Black,,375
 Venom III,85,75,35,90,75,60,Yes,Marvel Comics,bad,Male,Symbiote,7'6 // 229 cm,742 lb // 334 kg,Brown,Brown,,420
 Venompool,85,60,65,100,100,100,Yes,Marvel Comics,,Male,Symbiote,7'5 // 226 cm,- lb // 0 kg,,,,510
@@ -706,8 +706,8 @@ Vibe,80,10,20,30,100,30,Yes,DC Comics,good,Male,Human,5'10 // 178 cm,157 lb // 7
 Vindicator,85,65,55,65,60,70,Yes,Marvel Comics,good,Female,Human,5'5 // 165 cm,120 lb // 54 kg,Green,Red,,400
 Vindicator,0,0,0,0,0,0,No,Marvel Comics,good,Male,,- // 0 cm,- lb // 0 kg,,,,240
 Violator,55,65,25,80,85,30,No,Image Comics,bad,Male,,- // 0 cm,- lb // 0 kg,,,,340
-Violet Parr,80,10,15,50,80,15,No,Dark Horse Comics,good,Female,Human,4'6 // 137 cm,90 lb // 41 kg,Violet,Black,,250
-Vision,100,75,55,95,100,70,Yes,Marvel Comics,good,Male,Android,6'3 // 191 cm,300 lb // 135 kg,Gold,No Hair,Red,495
+Violet Parr,80,10,15,50,80,15,No,Dark Horse Comics,good,Female,Human,4'6 // 137 cm,90 lb // 41 kg,Purple,Black,,250
+Vision,100,75,55,95,100,70,Yes,Marvel Comics,good,Male,Android,6'3 // 191 cm,300 lb // 135 kg,Yellow,No Hair,Red,495
 Vision II,0,0,0,0,0,0,Yes,Marvel Comics,good,Male,,6'3' // 191 cm,300 lb // 135 kg,Red,No Hair,,240
 Vixen,80,40,50,50,65,25,No,DC Comics,good,Female,Human,5'9 // 175 cm,140 lb // 63 kg,Amber,Black,,310
 Vulcan,70,70,75,90,100,75,No,Marvel Comics,good,Male,,- // 0 cm,- lb // 0 kg,Black,Black,,480
@@ -737,7 +737,7 @@ X-23,90,25,45,100,55,95,Yes,Marvel Comics,good,Female,Mutant / Clone,5'1 // 155 
 X-Man,95,55,55,95,100,85,No,Marvel Comics,good,Male,,5'9 // 175 cm,135 lb // 61 kg,Blue,Brown,,485
 Yellow Claw,0,0,0,0,0,0,No,Marvel Comics,bad,Male,,6'2 // 188 cm,210 lb // 95 kg,Blue,No Hair,,240
 Yellowjacket,95,10,15,30,15,15,Yes,Marvel Comics,good,Male,Human,6' // 183 cm,185 lb // 83 kg,Blue,Blond,,180
-Yellowjacket II,80,10,35,30,35,30,No,Marvel Comics,good,Female,Human,5'5 // 165 cm,115 lb // 52 kg,Blue,Strawberry Blond,,220
+Yellowjacket II,80,10,35,30,35,30,No,Marvel Comics,good,Female,Human,5'5 // 165 cm,115 lb // 52 kg,Blue,Auburn,,220
 Ymir,80,100,30,100,100,30,No,Marvel Comics,good,Male,Frost Giant,100000 // 30480 cm,- lb // 0 kg,White,No Hair,White,440
 Yoda,95,55,35,25,100,90,No,George Lucas,good,Male,Yoda's species,2'2 // 66 cm,38 lb // 17 kg,Brown,White,Green,400
 Zatanna,95,10,25,30,100,60,Yes,DC Comics,good,Female,Human,5'7 // 170 cm,127 lb // 57 kg,Blue,Black,,320

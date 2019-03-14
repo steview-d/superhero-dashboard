@@ -17,7 +17,7 @@ function createDataVis(error, superheroData) {
         "Power",
         "Combat"
     ];
-    
+
     function hero_attr_to_integer(hero_attr) {
         // Convert all hero attributes to integers. Store as a
         // lowercased variable of the same name.
@@ -52,29 +52,29 @@ function createDataVis(error, superheroData) {
     display_gender_percent(ndx, 'Other', '#percent-other');
 
     /* ---------- Pie Charts -------------*/
-    // alignment(ndx);
-    // alter_ego(ndx);
-    // skin_color(ndx);
-    // hair_color(ndx);
-    // eye_color(ndx);
+    alignment(ndx);
+    alter_ego(ndx);
+    skin_color(ndx);
+    hair_color(ndx);
+    eye_color(ndx);
 
     /* ---------- Bar Charts -------------*/
-    // height(ndx);
-    // weight(ndx);
+    height(ndx);
+    weight(ndx);
 
     /* ---------- Row Chart --------------*/
-    // creator(ndx);
+    creator(ndx);
 
     /* ---------- Line Chart -------------*/
     stats(ndx);
-
+    
     dc.renderAll();
 }
 
 
 /* --------------------------------------------- Helper Functions -*/
 
-function remove_blanks(group, value_to_remove = "") {
+function remove_blanks(group, value_to_remove) {
     // Filter out specified values from passed group
     return {
         all: function() {
@@ -89,12 +89,13 @@ function remove_blanks(group, value_to_remove = "") {
 /* --------------------------------------------- Gender Functions -*/
 
 function gender_selector(ndx) {
-    dim = ndx.dimension(dc.pluck('Gender'));
-    group = dim.group()
+    var genderDim = ndx.dimension(dc.pluck('Gender'));
+    var genderGroup = genderDim.group();
+
 
     dc.selectMenu('#gender-selector')
-        .dimension(dim)
-        .group(group);
+        .dimension(genderDim)
+        .group(genderGroup);
 }
 
 function display_gender_percent(ndx, gender, element) {
@@ -128,7 +129,7 @@ function display_gender_percent(ndx, gender, element) {
                 return (d.gender_count / d.total);
             }
         })
-        .group(genderPercent)
+        .group(genderPercent);
 }
 
 
@@ -137,7 +138,7 @@ function display_gender_percent(ndx, gender, element) {
 function alignment(ndx) {
 
     var alignmentDim = ndx.dimension(dc.pluck('Alignment'));
-    var alignmentGroup = remove_blanks(alignmentDim.group());
+    var alignmentGroup = remove_blanks(alignmentDim.group(), "");
 
     dc.pieChart('#alignment')
         .height(350)
@@ -150,7 +151,7 @@ function alignment(ndx) {
 function alter_ego(ndx) {
 
     var alterEgoDim = ndx.dimension(dc.pluck('Alter Egos'));
-    var alterEgoGroup = remove_blanks(alterEgoDim.group());
+    var alterEgoGroup = remove_blanks(alterEgoDim.group(), "");
 
     dc.pieChart('#alter-ego')
         .height(350)
@@ -163,7 +164,7 @@ function alter_ego(ndx) {
 function skin_color(ndx) {
 
     var skinColorDim = ndx.dimension(dc.pluck('Skin color'));
-    var skinColorGroup = remove_blanks(skinColorDim.group());
+    var skinColorGroup = remove_blanks(skinColorDim.group(), "");
 
     dc.pieChart('#skin-color')
         .height(350)
@@ -175,7 +176,7 @@ function skin_color(ndx) {
 function hair_color(ndx) {
 
     var hairColorDim = ndx.dimension(dc.pluck('Hair color'));
-    var hairColorGroup = remove_blanks(hairColorDim.group());
+    var hairColorGroup = remove_blanks(hairColorDim.group(), "");
 
     dc.pieChart('#hair-color')
         .height(350)
@@ -187,7 +188,7 @@ function hair_color(ndx) {
 function eye_color(ndx) {
 
     var eyeColorDim = ndx.dimension(dc.pluck('Eye color'));
-    var eyeColorGroup = remove_blanks(eyeColorDim.group());
+    var eyeColorGroup = remove_blanks(eyeColorDim.group(), "");
 
     dc.pieChart('#eye-color')
         .height(350)
@@ -269,7 +270,7 @@ function weight(ndx) {
 
 function creator(ndx) {
     var creatorDim = ndx.dimension(dc.pluck('Creator'));
-    var creatorGroup = remove_blanks(creatorDim.group());
+    var creatorGroup = remove_blanks(creatorDim.group(), "");
 
     dc.rowChart('#creator')
         .width(900)
