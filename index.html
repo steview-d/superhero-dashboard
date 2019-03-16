@@ -20,7 +20,7 @@
 
 <body>
     <nav class="navbar navbar-default">
-        <div class="container-fluid">
+        <div class="container">
             <div class="navbar-header">
                 <a href="#" class="navbar-brand">Super Hero Creator</a>
             </div>
@@ -44,28 +44,42 @@
             <div class="row">
                 <div id="gender-selector"></div>
                 <div id="gender"></div>
-                <div id="alignment"></div>
-                <div id="alter-ego"></div>
-                <div id="skin-color"></div>
-                <div id="hair-color"></div>
-                <div id="eye-color"></div>
             </div>
             <div class="row">
-                <div id="height"></div>
-                <div id="weight"></div>
+                <div class="col-xs-12 col-md-6">
+                    <div id="alignment" class="pie-chart"></div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <div id="alter-ego" class="pie-chart"></div>
+                </div>
+            </div>
+            <!---->
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <div id="hair-color" class="pie-chart"></div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <div id="eye-color" class="pie-chart"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <div id="height" class="bar-chart"></div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <div id="weight" class="bar-chart"></div>
+                </div>
             </div>
 
             <div class="row">
-                <div id="creator"></div>
-            </div>
-
-
-            <div class="row">
-                <div id="stats"></div>
+                <div class="col-xs-12">
+                    <div id="creator" class="row-chart"></div>
+                </div>
             </div>
 
             <div class="row">
-                <div id="print-here">
+                <div class="col-xs-12">
+                    <div id="stats" class="line-chart"></div>
                 </div>
             </div>
         </div>
