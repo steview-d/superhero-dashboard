@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Super Hero Creator</title>
+    <title>Super Hero Dashboard</title>
 
     <link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="static/css/dc.min.css" type="text/css" />
@@ -19,10 +19,12 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-default">
-        <div class="container">
-            <div class="navbar-header">
-                <a href="#" class="navbar-brand">Super Hero Creator</a>
+
+    <nav class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 top-bar">
+                <a class="title" href="#">Super Hero Dashboard</a>
+                <a href="javascript:dc.filterAll(); dc.renderAll()" class="btn btn-sm btn-default reset-filters">Reset All Filters</a>
             </div>
         </div>
     </nav>
@@ -31,60 +33,72 @@
         <div class="container" style="background-color: #ddd">
             <div class="row">
                 <h1>Some Graphs & Charts & Stuff</h1>
-                <h3>blah blah blah</h3>
+            </div>
+            <div class="row">
+                <div id="gender-selector"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-4">
+                    <div class="intro">
+                        <h3>Introduction</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum eum dicta ex atque dolorem pariatur, quaerat alias blanditiis, numquam esse.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum eum dicta ex atque dolorem pariatur, quaerat alias blanditiis, numquam esse.</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div id="" class="gender">
+                        <h3>Gender</h3>
+                        <p>Male <span class="" id="percent-male"></span></p>
+                        <p>Female <span class="" id="percent-female"></span></p>
+                        <p>Other <span class="" id="percent-other"></span></p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div id="alignment" class="pie-chart"></div>
+                </div>
             </div>
             <div class="row">
                 <div class="col-xs-12">
-                    <p>Male <span class="" id="percent-male"></span></p>
-                    <p>Female <span class="" id="percent-female"></span></p>
-                    <p>Other <span class="" id="percent-other"></span></p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div id="gender-selector"></div>
-                <div id="gender"></div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-md-6">
-                    <div id="alignment" class="pie-chart"></div>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <div id="alter-ego" class="pie-chart"></div>
-                </div>
-            </div>
-            <!---->
-            <div class="row">
-                <div class="col-xs-12 col-md-6">
-                    <div id="hair-color" class="pie-chart"></div>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <div id="eye-color" class="pie-chart"></div>
+                    <div id="stats" class="line-chart"></div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12 col-md-6">
+                <div class="col-xs-12 col-sm-6">
                     <div id="height" class="bar-chart"></div>
                 </div>
-                <div class="col-xs-12 col-md-6">
+                <div class="col-xs-12 col-sm-6">
                     <div id="weight" class="bar-chart"></div>
                 </div>
             </div>
-
+            <!-- DID YOU KNOW BOX SECTION - FUN FACTS ETC BASED ON DATA -->
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-12">
+                    <div id="" class="did-you-know">
+                        <h3>Did You Know?</h3>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div id="alter-ego" class="pie-chart"></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div id="hair-color" class="pie-chart"></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div id="eye-color" class="pie-chart"></div>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-xs-12">
                     <div id="creator" class="row-chart"></div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-xs-12">
-                    <div id="stats" class="line-chart"></div>
-                </div>
-            </div>
         </div>
     </section>
+    <footer></footer>
 
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 
 </html>

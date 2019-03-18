@@ -46,10 +46,10 @@ function createDataVis(error, superheroData) {
 
 
     /* ---------- Gender -----------------*/
-    // gender_selector(ndx);
-    // display_gender_percent(ndx, 'Male', '#percent-male');
-    // display_gender_percent(ndx, 'Female', '#percent-female');
-    // display_gender_percent(ndx, 'Other', '#percent-other');
+    gender_selector(ndx);
+    display_gender_percent(ndx, 'Male', '#percent-male');
+    display_gender_percent(ndx, 'Female', '#percent-female');
+    display_gender_percent(ndx, 'Other', '#percent-other');
 
     /* ---------- Pie Charts -------------*/
     alignment(ndx);

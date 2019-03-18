@@ -1,3 +1,53 @@
+/*---------------------------------------------- Top Title Bar --------------*/
+
+.top-bar {
+    min-height: 50px;
+    background-image: linear-gradient(#801515, #aa3939 40%, #d46a6a);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .top-bar {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+}
+
+.title,
+.title:focus,
+.title:hover {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    margin: 10px 20px;
+    text-align: center;
+}
+
+.reset-filters {
+    margin: 10px 20px;
+}
+
+
+/*----------------------------------------------               --------------*/
+
+.intro {
+    min-height: 240px;
+    border: 1px solid black;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.gender {
+    min-height: 240px;
+    border: 1px solid black;
+    margin: 10px 0;
+    text-align: center;
+}
+
 .pie-chart {
     border: 1px solid black;
     margin: 10px 0;
@@ -10,6 +60,13 @@
     margin: 10px 0;
     width: 100%;
     height: 100%;
+}
+
+.did-you-know {
+    min-height: 240px;
+    border: 1px solid black;
+    margin: 10px 0;
+    text-align: center;
 }
 
 .row-chart {
