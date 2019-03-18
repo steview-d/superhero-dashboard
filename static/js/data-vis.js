@@ -214,11 +214,11 @@ function hair_color(ndx) {
         // .externalRadiusPadding(30)
         // .externalLabels(30)
         // .minAngleForLabel(0)
-        .label(function(d) {
-            console.log(dc.utils.printSingleValue(d.endAngle, d.startAngle))
-            if (dc.utils.printSingleValue(d.endAngle - d.startAngle < 50000000000 * Math.PI / 180)) { return "sss" }
-            else {return "hjhjhj"}
-        })
+        // .label(function(d) {
+        //     //console.log(dc.utils.printSingleValue(d.endAngle, d.startAngle))
+        //     if (dc.utils.printSingleValue(d.endAngle - d.startAngle < 50000000000 * Math.PI / 180)) { return "sss" }
+        //     else {return "hjhjhj"}
+        // })
         // .on('pretransition', function(chart) {
         //     chart.selectAll('text.pie-slice').text(function(d) {
         //         // return dc.utils.printSingleValue((d.endAngle - d.startAngle) / (2 * Math.PI) * 100) + '%';
@@ -355,7 +355,7 @@ function creator(ndx) {
         .height(400)
         .dimension(creatorDim)
         .group(creatorGroup)
-        .cap(15)
+        .cap(10)
         .useViewBoxResizing(true)
         .transitionDuration(500);
 }

@@ -1,3 +1,30 @@
+/*---------------------------------------------- General Styling ------------*/
+
+body {
+    background-color: #ddd
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+hr {
+    margin: 15px auto;
+    border-color: #888;
+}
+
+.box-outline {
+    padding: 15px 10px;
+    border: 1px solid black;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.heading--h3 {
+    margin: 0 auto 15px auto;
+}
+
 /*---------------------------------------------- Top Title Bar --------------*/
 
 .top-bar {
@@ -34,50 +61,59 @@
 
 /*----------------------------------------------               --------------*/
 
-.intro {
-    min-height: 240px;
-    border: 1px solid black;
-    margin: 10px 0;
-    text-align: center;
+.wrapper {
+    border-radius: 10px;
 }
 
-.gender {
-    min-height: 240px;
-    border: 1px solid black;
-    margin: 10px 0;
-    text-align: center;
+
+/*---------------------------------------------- Introduction ---------------*/
+
+/*---------------------------------------------- Gender ---------------------*/
+
+.gender-icon {
+    font-size: 5em;
 }
+
+.gender-percent {
+    font-size: 1.4em;
+    display: flex;
+    justify-content: center;
+
+}
+
+.gender-text {
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+.gender-filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*----------------------------------------------               --------------*/
 
 .pie-chart {
-    border: 1px solid black;
-    margin: 10px 0;
     width: 100%;
     height: 100%;
+    margin: 0 0 10px 0;
 }
 
 .bar-chart {
-    border: 1px solid black;
     margin: 10px 0;
     width: 100%;
     height: 100%;
 }
 
-.did-you-know {
-    min-height: 240px;
-    border: 1px solid black;
-    margin: 10px 0;
-    text-align: center;
-}
-
 .row-chart {
-    border: 1px solid black;
     margin: 10px 0;
     width: 100%;
     height: 100%;
 }
 
 .line-chart {
-    border: 1px solid black;
     margin: 10px 0;
     width: 100%;
     height: 100%;
