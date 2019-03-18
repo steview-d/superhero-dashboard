@@ -6,23 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Super Hero Dashboard</title>
-
+    <!-- CSS Libraries-->
     <link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="static/css/dc.min.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
-
+    <!--Favicon-->
+    <!--<link rel="shortcut icon" href="" type="image/x-icon">-->
+    <!-- My CSS-->
     <link rel="stylesheet" href="static/css/style.css" type="text/css" />
-
+    <!-- JS Libraries-->
     <script type="text/javascript" src="static/js/d3.min.js"></script>
     <script type="text/javascript" src="static/js/crossfilter.min.js"></script>
     <script type="text/javascript" src="static/js/dc.min.js"></script>
     <script type="text/javascript" src="static/js/queue.min.js"></script>
+    <!-- My JS-->
     <script type="text/javascript" src="static/js/data-vis.js"></script>
 </head>
 
-<body>
+<!--<div class="bg-fixed"></div>-->
 
+<body class="bg-fixed">
+    <!-- Top Title Bar -->
     <nav class="container-fluid">
         <div class="row">
             <div class="col-xs-12 top-bar">
@@ -32,154 +36,154 @@
         </div>
     </nav>
 
-    <section>
-        <div class="container wrapper">
-            <div class="row">
-                <!-- Introduction -->
-                <div class="col-xs-12 col-sm-12 col-md-4">
-                    <div class="box-outline">
-                        <h3 class="heading--h3">Introduction</h3>
-                        <hr>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum eum dicta ex atque dolorem pariatur, quaerat alias blanditiis, numquam esse.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum eum dicta ex atque dolorem pariatur, quaerat alias blanditiis, numquam esse.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum eum dicta ex atque dolorem pariatur, quaerat alias blanditiis, numquam esse.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum eum dicta ex atque dolorem pariatur, quaerat alias blanditiis, numquam esse.</p>
-                    </div>
+    <!-- Main Content-->
+    <section class="container wrapper">
+        <div class="row">
+            <!-- Introduction -->
+            <header class="col-xs-12 col-sm-12 col-md-4">
+                <div class="content-wrapper">
+                    <h3 class="heading--h3">Introduction</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum eum dicta ex atque dolorem pariatur, quaerat alias blanditiis, numquam esse.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum eum dicta ex atque dolorem pariatur, quaerat alias blanditiis, numquam esse.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum eum dicta ex atque dolorem pariatur, quaerat alias blanditiis, numquam esse.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum eum dicta ex atque dolorem pariatur, quaerat alias blanditiis, numquam esse.</p>
                 </div>
-                <!-- Gender -->
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="box-outline">
-                        <h3 class="heading--h3">Gender</h3>
-                        <hr>
-                        <div class="row">
-                            <div class="col-xs-4">
-                                <div><i class="fas fa-venus gender-icon"></i></div>
-                                <div class="gender-percent">
-                                    <div id="percent-female"></div>
-                                </div>
-                            </div>
-                            <div class="col-xs-4">
-                                <div><i class="fas fa-mars gender-icon"></i></div>
-                                <div class="gender-percent">
-                                    <div id="percent-male"></div>
-                                </div>
-                            </div>
-                            <div class="col-xs-4">
-                                <div><i class="fas fa-genderless gender-icon"></i></div>
-                                <div class="gender-percent">
-                                    <div id="percent-other"></div>
-                                </div>
+            </header>
+            <!-- Gender -->
+            <article class="col-xs-12 col-sm-6 col-md-4">
+                <div class="content-wrapper">
+                    <h3 class="heading--h3">Gender</h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <div><i class="fas fa-venus gender-icon"></i></div>
+                            <div class="gender-percent">
+                                <div id="percent-female"></div>
                             </div>
                         </div>
-                        <p class="gender-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, expedita veritatis quam nostrum reiciendis ipsam.</p>
-                        <p class="gender-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, expedita veritatis quam nostrum reiciendis ipsam.</p>
-                        <hr>
-                        <div class="gender-filter">
-                            <div>Filter data by gender:</div>
-                            <div id="gender-selector"></div>
+                        <div class="col-xs-4">
+                            <div><i class="fas fa-mars gender-icon"></i></div>
+                            <div class="gender-percent">
+                                <div id="percent-male"></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div><i class="fas fa-genderless gender-icon"></i></div>
+                            <div class="gender-percent">
+                                <div id="percent-other"></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- Alignment -->
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="box-outline">
-                        <h3 class="heading--h3">Alignment</h3>
-                        <hr>
-                        <div id="alignment" class="pie-chart"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ducimus iste accusantium explicabo soluta, ullam architecto modi, ipsa repellendus? Sint!</p>
+                    <p class="gender-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, expedita veritatis quam nostrum reiciendis ipsam.</p>
+                    <p class="gender-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, expedita veritatis quam nostrum reiciendis ipsam.</p>
+                    <hr>
+                    <div class="gender-filter">
+                        <div>Filter data by gender:</div>
+                        <div id="gender-selector"></div>
                     </div>
                 </div>
-            </div>
+            </article>
+            <!-- Alignment -->
+            <article class="col-xs-12 col-sm-6 col-md-4">
+                <div class="content-wrapper">
+                    <h3 class="heading--h3">Alignment</h3>
+                    <hr>
+                    <div id="alignment" class="pie-chart"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ducimus iste accusantium explicabo soluta, ullam architecto modi, ipsa repellendus? Sint!</p>
+                </div>
+            </article>
+        </div>
 
+        <div class="row">
+            <!-- Stats Row Chart -->
+            <article class="col-xs-12">
+                <div class="content-wrapper">
+                    <h3 class="heading--h3">Stats</h3>
+                    <hr>
+                    <div id="stats" class="line-chart"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ducimus iste accusantium explicabo soluta, ullam architecto modi, ipsa repellendus? Sint!</p>
+                </div>
+            </article>
+        </div>
 
-            <div class="row">
-                <!-- Stats Row Chart -->
-                <div class="col-xs-12">
-                    <div class="box-outline">
-                        <h3 class="heading--h3">Stats</h3>
-                        <hr>
-                        <div id="stats" class="line-chart"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ducimus iste accusantium explicabo soluta, ullam architecto modi, ipsa repellendus? Sint!</p>
-                    </div>
+        <div class="row">
+            <!-- Height Bar Chart -->
+            <article class="col-xs-12 col-sm-6">
+                <div class="content-wrapper">
+                    <h3 class="heading--h3">Height</h3>
+                    <hr>
+                    <div id="height" class="bar-chart"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ducimus iste accusantium explicabo soluta, ullam architecto modi, ipsa repellendus? Sint!</p>
                 </div>
-            </div>
+            </article>
+            <!-- Weight Bar Chart -->
+            <article class="col-xs-12 col-sm-6">
+                <div class="content-wrapper">
+                    <h3 class="heading--h3">Weight</h3>
+                    <hr>
+                    <div id="weight" class="bar-chart"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ducimus iste accusantium explicabo soluta, ullam architecto modi, ipsa repellendus? Sint!</p>
+                </div>
+            </article>
+        </div>
 
-            <div class="row">
-                <!-- Height Bar Chart -->
-                <div class="col-xs-12 col-sm-6">
-                    <div class="box-outline">
-                        <h3 class="heading--h3">Height</h3>
-                        <hr>
-                        <div id="height" class="bar-chart"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ducimus iste accusantium explicabo soluta, ullam architecto modi, ipsa repellendus? Sint!</p>
-                    </div>
+        <div class="row">
+            <!-- Did You Know? Info Box -->
+            <article class="col-xs-12 col-sm-6 col-md-12">
+                <div id="" class="content-wrapper">
+                    <h3 class="heading--h3">Did You Know?</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quam sequi ab delectus voluptatum perspiciatis ipsum, aliquid ipsam dicta! Assumenda at autem sequi, pariatur praesentium, tempore sunt beatae modi officia?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quam sequi ab delectus voluptatum perspiciatis ipsum, aliquid ipsam dicta! Assumenda at autem sequi, pariatur praesentium, tempore sunt beatae modi officia?</p>
                 </div>
-                <!-- Weight Bar Chart -->
-                <div class="col-xs-12 col-sm-6">
-                    <div class="box-outline">
-                        <h3 class="heading--h3">Weight</h3>
-                        <hr>
-                        <div id="weight" class="bar-chart"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ducimus iste accusantium explicabo soluta, ullam architecto modi, ipsa repellendus? Sint!</p>
-                    </div>
+            </article>
+            <!-- Alter Ego Pie Chart -->
+            <article class="col-xs-12 col-sm-6 col-md-4">
+                <div class="content-wrapper">
+                    <h3 class="heading--h3">Alter Ego</h3>
+                    <hr>
+                    <div id="alter-ego" class="pie-chart"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ducimus iste accusantium explicabo soluta, ullam architecto modi, ipsa repellendus? Sint!</p>
                 </div>
-            </div>
+            </article>
+            <!-- Hair Color Pie Chart -->
+            <article class="col-xs-12 col-sm-6 col-md-4">
+                <div class="content-wrapper">
+                    <h3 class="heading--h3">Hair Color</h3>
+                    <hr>
+                    <div id="hair-color" class="pie-chart"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ducimus iste accusantium explicabo soluta, ullam architecto modi, ipsa repellendus? Sint!</p>
+                </div>
+            </article>
+            <!-- Eye Color Pie Chart -->
+            <article class="col-xs-12 col-sm-6 col-md-4">
+                <div class="content-wrapper">
+                    <h3 class="heading--h3">Eye Color</h3>
+                    <hr>
+                    <div id="eye-color" class="pie-chart"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ducimus iste accusantium explicabo soluta, ullam architecto modi, ipsa repellendus? Sint!</p>
+                </div>
+            </article>
+        </div>
 
-            <!-- DID YOU KNOW BOX SECTION - FUN FACTS ETC BASED ON DATA -->
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-12">
-                    <div id="" class="box-outline">
-                        <h3 class="heading--h3">Did You Know?</h3>
-                        <hr>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quam sequi ab delectus voluptatum perspiciatis ipsum, aliquid ipsam dicta! Assumenda at autem sequi, pariatur praesentium, tempore sunt beatae modi officia?</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quam sequi ab delectus voluptatum perspiciatis ipsum, aliquid ipsam dicta! Assumenda at autem sequi, pariatur praesentium, tempore sunt beatae modi officia?</p>
-                    </div>
+        <div class="row">
+            <!-- Creator Pie Chart -->
+            <article class="col-xs-12">
+                <div class="content-wrapper">
+                    <h3 class="heading--h3">Creator</h3>
+                    <hr>
+                    <div id="creator" class="row-chart"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ducimus iste accusantium explicabo soluta, ullam architecto modi, ipsa repellendus? Sint!</p>
                 </div>
-                <!-- Alter Ego Pie Chart -->
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="box-outline">
-                        <h3 class="heading--h3">Alter Ego</h3>
-                        <hr>
-                        <div id="alter-ego" class="pie-chart"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ducimus iste accusantium explicabo soluta, ullam architecto modi, ipsa repellendus? Sint!</p>
-                    </div>
-                </div>
-                <!-- Hair Color Pie Chart -->
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="box-outline">
-                        <h3 class="heading--h3">Hair Color</h3>
-                        <hr>
-                        <div id="hair-color" class="pie-chart"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ducimus iste accusantium explicabo soluta, ullam architecto modi, ipsa repellendus? Sint!</p>
-                    </div>
-                </div>
-                <!-- Eye Color Pie Chart -->
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="box-outline">
-                        <h3 class="heading--h3">Eye Color</h3>
-                        <hr>
-                        <div id="eye-color" class="pie-chart"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ducimus iste accusantium explicabo soluta, ullam architecto modi, ipsa repellendus? Sint!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <!-- Creator Pie Chart -->
-                <div class="col-xs-12">
-                    <div class="box-outline">
-                        <h3 class="heading--h3">Creator</h3>
-                        <hr>
-                        <div id="creator" class="row-chart"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ducimus iste accusantium explicabo soluta, ullam architecto modi, ipsa repellendus? Sint!</p>
-                    </div>
-                </div>
-            </div>
+            </article>
         </div>
     </section>
-    <footer></footer>
+
+    <footer>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 
 </html>

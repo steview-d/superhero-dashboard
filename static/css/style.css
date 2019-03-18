@@ -1,8 +1,10 @@
 /*---------------------------------------------- General Styling ------------*/
 
 body {
-    background-color: #ddd
+    /*background-color: #ddd*/
 }
+
+/* TBC if being used - can't currently get it to work... */
 
 .flex-row {
     display: flex;
@@ -14,16 +16,32 @@ hr {
     border-color: #888;
 }
 
-.box-outline {
+.content-wrapper {
     padding: 15px 10px;
-    border: 1px solid black;
-    margin: 10px 0;
+    border: 2px solid red;
+    border-radius: 10px;
+    background-color: white;
+    opacity: 0.9;
+    margin: 12.5px 0;
     text-align: center;
 }
 
 .heading--h3 {
     margin: 0 auto 15px auto;
 }
+
+.wrapper {
+    border-radius: 10px;
+}
+
+.bg-fixed {
+    background: url("../images/comic_bg.jpg") center / cover fixed;
+    /*background: url("../images/comic_bg.jpg") no-repeat center center fixed;*/
+    /*min-height: 100vh;*/
+    /*position: fixed;*/
+    background-size: auto;
+}
+
 
 /*---------------------------------------------- Top Title Bar --------------*/
 
@@ -59,15 +77,6 @@ hr {
 }
 
 
-/*----------------------------------------------               --------------*/
-
-.wrapper {
-    border-radius: 10px;
-}
-
-
-/*---------------------------------------------- Introduction ---------------*/
-
 /*---------------------------------------------- Gender ---------------------*/
 
 .gender-icon {
@@ -78,7 +87,6 @@ hr {
     font-size: 1.4em;
     display: flex;
     justify-content: center;
-
 }
 
 .gender-text {
@@ -93,7 +101,7 @@ hr {
     align-items: center;
 }
 
-/*----------------------------------------------               --------------*/
+/*---------------------------------------------- Charts ---------------------*/
 
 .pie-chart {
     width: 100%;
