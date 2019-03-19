@@ -28,17 +28,15 @@ hr {
 
 .heading--h3 {
     margin: 0 auto 15px auto;
+    color: #141414;
 }
 
-.wrapper {
-    border-radius: 10px;
+p {
+    color: #141414;
 }
 
 .bg-fixed {
     background: url("../images/comic_bg.jpg") center / cover fixed;
-    /*background: url("../images/comic_bg.jpg") no-repeat center center fixed;*/
-    /*min-height: 100vh;*/
-    /*position: fixed;*/
     background-size: auto;
 }
 
@@ -101,7 +99,35 @@ hr {
     align-items: center;
 }
 
+.gender-color-female {
+    color: #ff61c8;
+}
+
+.gender-color-male {
+    color: #5020ff;
+}
+
+.gender-color-genderless {
+    color: #03ff74;
+}
+
+
 /*---------------------------------------------- Charts ---------------------*/
+
+/*.dc-chart text.pie-slice {fill: black;}*/
+
+.dc-chart .pie-slice {
+    font-size: 14px;
+}
+
+.dc-chart g.row text {
+    fill: black;
+    font-size: 12px;
+}
+
+.add-black-fill {
+    fill:black;
+}
 
 .pie-chart {
     width: 100%;

@@ -139,7 +139,7 @@ function display_gender_percent(ndx, gender, element) {
 function alignment(ndx) {
 
     var alignmentColors = d3.scale.ordinal()
-        .range(['#bbb', '#666', '#888']);
+        .range(['#6c6cff', '#ff6c6c', '#ffda6c']);
 
     var alignmentDim = ndx.dimension(dc.pluck('Alignment'));
     var alignmentGroup = remove_blanks(alignmentDim.group(), "");
@@ -150,11 +150,15 @@ function alignment(ndx) {
         .radius(170)
         .transitionDuration(500)
         .cx(210)
-        .legend(dc.legend().x(420).y(20).itemHeight(30).gap(8))
+        .legend(dc.legend().x(420).y(10).itemHeight(35).gap(8))
         .colorAccessor(function(d) {
             return d.key;
         })
         .colors(alignmentColors)
+        .label(function(d) {
+            //Capitalise first letter in string
+            return d.key.charAt(0).toUpperCase() + d.key.slice(1);
+        })
         .useViewBoxResizing(true)
         .dimension(alignmentDim)
         .group(alignmentGroup);
@@ -163,7 +167,7 @@ function alignment(ndx) {
 function alter_ego(ndx) {
 
     var alterEgoColors = d3.scale.ordinal()
-        .range(['indigo', 'deeppink']);
+        .range(['darkorchid', '#ccb232']);
 
     var alterEgoDim = ndx.dimension(dc.pluck('Alter Egos'));
     var alterEgoGroup = remove_blanks(alterEgoDim.group(), "");
@@ -174,7 +178,7 @@ function alter_ego(ndx) {
         .radius(170)
         .transitionDuration(500)
         .cx(210)
-        .legend(dc.legend().x(420).y(20).itemHeight(30).gap(8))
+        .legend(dc.legend().x(420).y(10).itemHeight(35).gap(8))
         .colorAccessor(function(d) {
             return d.key;
         })
@@ -199,6 +203,9 @@ function skin_color(ndx) {
 
 function hair_color(ndx) {
 
+    var alignmentColors = d3.scale.ordinal()
+        .range(['black', '#e0d07e', 'saddlebrown', 'slategray', 'indianred', 'gray', 'lightsteelblue']);
+
     var hairColorDim = ndx.dimension(dc.pluck('Hair color'));
     var hairColorGroup = remove_blanks(hairColorDim.group(), "");
 
@@ -209,7 +216,11 @@ function hair_color(ndx) {
         .transitionDuration(500)
         .cx(210)
         .slicesCap(6)
-        .legend(dc.legend().x(420).y(20).itemHeight(20).gap(5))
+        .legend(dc.legend().x(420).y(10).itemHeight(35).gap(8))
+        .colorAccessor(function(d) {
+            return d.key;
+        })
+        .colors(alignmentColors)
         //.drawPaths(true)
         // .externalRadiusPadding(30)
         // .externalLabels(30)
@@ -233,6 +244,9 @@ function hair_color(ndx) {
 
 function eye_color(ndx) {
 
+    var alignmentColors = d3.scale.ordinal()
+        .range(['cornflowerblue', 'saddlebrown', 'mediumseagreen', 'indianred', '#e0d07e', 'black', 'gray', 'lightsteelblue',]);
+
     var eyeColorDim = ndx.dimension(dc.pluck('Eye color'));
     var eyeColorGroup = remove_blanks(eyeColorDim.group(), "");
 
@@ -243,7 +257,11 @@ function eye_color(ndx) {
         .transitionDuration(500)
         .cx(210)
         .slicesCap(7)
-        .legend(dc.legend().x(420).y(20).itemHeight(20).gap(5))
+        .legend(dc.legend().x(420).y(10).itemHeight(35).gap(8))
+                .colorAccessor(function(d) {
+            return d.key;
+        })
+        .colors(alignmentColors)
         //.drawPaths(true)
         // .externalRadiusPadding(30)
         // .externalLabels(30)
@@ -265,7 +283,7 @@ function eye_color(ndx) {
 function height(ndx) {
 
     var heightColors = d3.scale.ordinal()
-        .range(['pink', 'red']);
+        .range(['mediumseagreen', 'indianred']);
 
     var heightDim = ndx.dimension(function(d) {
         switch (true) {
@@ -288,7 +306,7 @@ function height(ndx) {
         .width(500)
         .height(350)
         .useViewBoxResizing(true)
-        .margins({ top: 10, right: 50, bottom: 30, left: 50 })
+        .margins({ top: 10, right: 40, bottom: 40, left: 40 })
         .dimension(heightDim)
         .group(heightGroup)
         .colorAccessor(function(d) {
@@ -306,7 +324,7 @@ function height(ndx) {
 function weight(ndx) {
 
     var weightColors = d3.scale.ordinal()
-        .range(['pink', 'red']);
+        .range(['mediumseagreen', 'indianred']);
 
     var weightDim = ndx.dimension(function(d) {
         switch (true) {
@@ -329,7 +347,7 @@ function weight(ndx) {
         .width(500)
         .height(350)
         .useViewBoxResizing(true)
-        .margins({ top: 10, right: 50, bottom: 30, left: 50 })
+        .margins({ top: 10, right: 40, bottom: 40, left: 40 })
         .dimension(weightDim)
         .colorAccessor(function(d) {
             return d.key;
@@ -353,6 +371,8 @@ function creator(ndx) {
     dc.rowChart('#creator')
         .width(900)
         .height(400)
+        .margins({ top: 10, right: 20, bottom: 40, left: 20 })
+        //.xAxisLabel(' Super Heroes')
         .dimension(creatorDim)
         .group(creatorGroup)
         .cap(10)
@@ -383,7 +403,7 @@ function stats(ndx) {
     compositeChart
         .width(900)
         .height(400)
-        .margins({ top: 10, right: 30, bottom: 30, left: 30 })
+        .margins({ top: 10, right: 30, bottom: 40, left: 40 })
         .x(d3.scale.linear().domain([0, 100]))
         .xAxisLabel('Attribute Value')
         .yAxisLabel('Frequency')
