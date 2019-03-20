@@ -1,9 +1,5 @@
 /*---------------------------------------------- General Styling ------------*/
 
-body {
-    /*background-color: #ddd*/
-}
-
 .eq-column-height {
     display: flex;
     flex-wrap: wrap;
@@ -48,7 +44,7 @@ p {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 12.5px;
 }
 
 @media (min-width: 768px) {
@@ -112,18 +108,11 @@ p {
 
 /*---------------------------------------------- Charts ---------------------*/
 
-/*.dc-chart text.pie-slice {fill: black;}*/
-
 .dc-chart .pie-slice {
     font-size: 14px;
 }
 
 .dc-chart g.row text {
-    fill: black;
-    font-size: 12px;
-}
-
-.add-black-fill {
     fill: black;
 }
 
@@ -149,4 +138,59 @@ p {
     margin: 10px 0;
     width: 100%;
     height: 100%;
+}
+
+
+/*---------------------------------------------- Footer ---------------------*/
+.footer {
+        min-height: 50px;
+    margin-top: 12.5px;
+        background-color: black;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-between;*/
+    align-items: center;
+    text-align: center;
+    padding: 8px;
+
+}
+
+/*@media (min-width: 1200px) {*/
+/*    .footer-left {*/
+/*        text-align: right;*/
+/*    }*/
+/*    .footer-right {*/
+/*        text-align: left;*/
+/*    }*/
+/*}*/
+
+.github-logo {
+    color: white;
+    font-size: 2em;
+    padding: 8px 0;
+    transition: all .2s ease-in-out
+}
+
+.github-logo:focus,
+.github-logo:hover {
+    color: #e5462d;
+}
+
+@media (min-width: 768px) {
+    .github-logo {
+        font-size: 2.4em;
+    }
+}
+
+.kaggle-logo {
+    height: 1.25em;
+}
+
+.kaggle-logo:focus,
+.kaggle-logo:hover {
+    opacity: 0.8;
 }

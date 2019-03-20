@@ -62,7 +62,7 @@ function createDataVis(error, superheroData) {
     weight(ndx);
 
     /* ---------- Row Chart --------------*/
-    creator(ndx);
+    publisher(ndx);
 
     /* ---------- Line Chart -------------*/
     stats(ndx);
@@ -382,11 +382,11 @@ function weight(ndx) {
 
 /* --------------------------------------------------- Row Charts -*/
 
-function creator(ndx) {
-    var creatorDim = ndx.dimension(dc.pluck('Creator'));
-    var creatorGroup = remove_blanks(creatorDim.group(), "");
+function publisher(ndx) {
+    var publisherDim = ndx.dimension(dc.pluck('Publisher'));
+    var publisherGroup = remove_blanks(publisherDim.group(), "");
 
-    dc.rowChart('#creator')
+    dc.rowChart('#publisher')
         .width(900)
         .height(400)
         .margins({ top: 10, right: 20, bottom: 40, left: 20 })
@@ -401,8 +401,8 @@ function creator(ndx) {
             return d.key + " | " + d.value
         })
         .transitionDuration(500)
-        .dimension(creatorDim)
-        .group(creatorGroup);
+        .dimension(publisherDim)
+        .group(publisherGroup);
 }
 
 
