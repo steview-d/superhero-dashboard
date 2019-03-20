@@ -7,23 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Super Hero Dashboard</title>
     <!-- CSS Libraries-->
-    <link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="static/css/dc.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/spacelab/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.min.css" type="text/css" />
+    <!-- Font Awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!--Favicon-->
-    <!--<link rel="shortcut icon" href="" type="image/x-icon">-->
+    <link rel="shortcut icon" href="/static/images/sh.ico" type="image/x-icon">
     <!-- My CSS-->
     <link rel="stylesheet" href="static/css/style.css" type="text/css" />
     <!-- JS Libraries-->
-    <script type="text/javascript" src="static/js/d3.min.js"></script>
-    <script type="text/javascript" src="static/js/crossfilter.min.js"></script>
-    <script type="text/javascript" src="static/js/dc.min.js"></script>
-    <script type="text/javascript" src="static/js/queue.min.js"></script>
-    <!-- My JS-->
-    <script type="text/javascript" src="static/js/data-vis.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+    <!-- Data-Vis JS -->
+    <script src="static/js/data-vis.js"></script>
 </head>
-
-<!--<div class="bg-fixed"></div>-->
 
 <body class="bg-fixed">
     <!-- Top Title Bar -->
@@ -31,7 +30,8 @@
         <div class="row">
             <div class="col-xs-12 top-bar">
                 <div class="title" href="#">Super Hero Dashboard</div>
-                <a href="javascript:dc.filterAll(); dc.renderAll()" class="btn btn-sm btn-default reset-filters">Reset All Filters</a>
+                <!--<a href="javascript:dc.filterAll(); dc.renderAll()" class="btn btn-sm btn-default reset-filters">Reset All Filters</a>-->
+                <div id="reset" class="btn btn-sm btn-default reset-filters">Reset All Filters</div>
             </div>
         </div>
     </nav>
@@ -200,20 +200,22 @@
     <footer class="container-fluid footer">
         <div class="container">
             <div class="row footer-content">
-                <div class="col-xs-12 col-sm-4 footer-left">
+                <div class="col-xs-12 col-sm-4">
                     <div>&copy;2019 Dave Laffan</div>
                 </div>
                 <div class="col-xs-12 col-sm-4">
                     <a href="https://github.com/steview-d" target="_blank"><i class="fab fa-github github-logo"></i></a>
                 </div>
-                <div class="col-xs-12 col-sm-4 footer-right">
-                    <div>Original unmodified dataset sourced from <span><a href="https://www.kaggle.com/thec03u5/complete-superhero-dataset" target="_blank"><img src="/static/images/kaggle.png" alt="kaggle.com" class="kaggle-logo"></span></a>.</div>
+                <div class="col-xs-12 col-sm-4">
+                    <div>Original unmodified dataset sourced from <span><a href="https://www.kaggle.com/thec03u5/complete-superhero-dataset" target="_blank"><img src="/static/images/kaggle.png" alt="kaggle.com" class="kaggle-logo"></a></span>.</div>
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="static/js/helper.js"></script>
 </body>
 
 </html>

@@ -397,8 +397,7 @@ function publisher(ndx) {
             return d.value + " Superhero(es) created by " + d.key;
         })
         .label(function(d) {
-            console.log(d.key)
-            return d.key + " | " + d.value
+            return d.key + " | " + d.value;
         })
         .transitionDuration(500)
         .dimension(publisherDim)
