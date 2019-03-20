@@ -4,9 +4,7 @@ body {
     /*background-color: #ddd*/
 }
 
-/* TBC if being used - can't currently get it to work... */
-
-.flex-row {
+.eq-column-height {
     display: flex;
     flex-wrap: wrap;
 }
@@ -126,7 +124,7 @@ p {
 }
 
 .add-black-fill {
-    fill:black;
+    fill: black;
 }
 
 .pie-chart {

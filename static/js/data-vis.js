@@ -54,7 +54,6 @@ function createDataVis(error, superheroData) {
     /* ---------- Pie Charts -------------*/
     alignment(ndx);
     alter_ego(ndx);
-    // skin_color(ndx); // Too little data to be of much use
     hair_color(ndx);
     eye_color(ndx);
 
@@ -159,6 +158,14 @@ function alignment(ndx) {
             //Capitalise first letter in string
             return d.key.charAt(0).toUpperCase() + d.key.slice(1);
         })
+        .title(function(d) {
+            if (d.value === 1) {
+                return d.value + " Superhero is " + d.key;
+            }
+            else {
+                return d.value + " Superheroes are " + d.key;
+            }
+        })
         .useViewBoxResizing(true)
         .dimension(alignmentDim)
         .group(alignmentGroup);
@@ -183,23 +190,30 @@ function alter_ego(ndx) {
             return d.key;
         })
         .colors(alterEgoColors)
+        .title(function(d) {
+            var grammar = "";
+            if (d.key === "No") {
+                grammar = " do not";
+            }
+            return d.value + " Superheroes" + grammar + " have an alter ego ";
+        })
         .useViewBoxResizing(true)
         .dimension(alterEgoDim)
         .group(alterEgoGroup);
 }
 
-function skin_color(ndx) {
-    // Most likely not using - too many blanks
-    var skinColorDim = ndx.dimension(dc.pluck('Skin color'));
-    var skinColorGroup = remove_blanks(skinColorDim.group(), "");
+// function skin_color(ndx) {
+//     // Most likely not using - too many blanks
+//     var skinColorDim = ndx.dimension(dc.pluck('Skin color'));
+//     var skinColorGroup = remove_blanks(skinColorDim.group(), "");
 
-    dc.pieChart('#skin-color')
-        .height(350)
-        .radius(130)
-        .slicesCap(7)
-        .dimension(skinColorDim)
-        .group(skinColorGroup);
-}
+//     dc.pieChart('#skin-color')
+//         .height(350)
+//         .radius(130)
+//         .slicesCap(7)
+//         .dimension(skinColorDim)
+//         .group(skinColorGroup);
+// }
 
 function hair_color(ndx) {
 
@@ -221,21 +235,17 @@ function hair_color(ndx) {
             return d.key;
         })
         .colors(alignmentColors)
-        //.drawPaths(true)
-        // .externalRadiusPadding(30)
-        // .externalLabels(30)
-        // .minAngleForLabel(0)
-        // .label(function(d) {
-        //     //console.log(dc.utils.printSingleValue(d.endAngle, d.startAngle))
-        //     if (dc.utils.printSingleValue(d.endAngle - d.startAngle < 50000000000 * Math.PI / 180)) { return "sss" }
-        //     else {return "hjhjhj"}
-        // })
-        // .on('pretransition', function(chart) {
-        //     chart.selectAll('text.pie-slice').text(function(d) {
-        //         // return dc.utils.printSingleValue((d.endAngle - d.startAngle) / (2 * Math.PI) * 100) + '%';
-        //         return d.data.key + ' ' + dc.utils.printSingleValue((d.endAngle - d.startAngle) / (2 * Math.PI) * 100) + '%';
-        //     })
-        // })
+        .title(function(d) {
+            if (d.key === "No Hair") {
+                return d.value + " Superhero(es) with " + d.key;
+            }
+            else if (d.key === "Others") {
+                return d.value + " Superhero(es) with a different color hair";
+            }
+            else {
+                return d.value + " Superhero(es) with " + d.key + " hair";
+            }
+        })
         .useViewBoxResizing(true)
         .dimension(hairColorDim)
         .group(hairColorGroup);
@@ -245,7 +255,7 @@ function hair_color(ndx) {
 function eye_color(ndx) {
 
     var alignmentColors = d3.scale.ordinal()
-        .range(['cornflowerblue', 'saddlebrown', 'mediumseagreen', 'indianred', '#e0d07e', 'black', 'gray', 'lightsteelblue',]);
+        .range(['cornflowerblue', 'saddlebrown', 'mediumseagreen', 'indianred', '#e0d07e', 'black', 'gray', 'lightsteelblue', ]);
 
     var eyeColorDim = ndx.dimension(dc.pluck('Eye color'));
     var eyeColorGroup = remove_blanks(eyeColorDim.group(), "");
@@ -258,20 +268,18 @@ function eye_color(ndx) {
         .cx(210)
         .slicesCap(7)
         .legend(dc.legend().x(420).y(10).itemHeight(35).gap(8))
-                .colorAccessor(function(d) {
+        .colorAccessor(function(d) {
             return d.key;
         })
         .colors(alignmentColors)
-        //.drawPaths(true)
-        // .externalRadiusPadding(30)
-        // .externalLabels(30)
-        // .minAngleForLabel(0)
-        // .on('pretransition', function(chart) {
-        //     chart.selectAll('text.pie-slice').text(function(d) {
-        //         // return dc.utils.printSingleValue((d.endAngle - d.startAngle) / (2 * Math.PI) * 100) + '%';
-        //         return d.data.key + ' ' + dc.utils.printSingleValue((d.endAngle - d.startAngle) / (2 * Math.PI) * 100) + '%';
-        //     })
-        // })
+        .title(function(d) {
+            if (d.key === "Others") {
+                return d.value + " Superhero(es) with a different color eyes";
+            }
+            else {
+                return d.value + " Superhero(es) with " + d.key + " eyes";
+            }
+        })
         .useViewBoxResizing(true)
         .dimension(eyeColorDim)
         .group(eyeColorGroup);
@@ -306,13 +314,18 @@ function height(ndx) {
         .width(500)
         .height(350)
         .useViewBoxResizing(true)
-        .margins({ top: 10, right: 40, bottom: 40, left: 40 })
+        .margins({ top: 15, right: 40, bottom: 40, left: 40 })
+        .clipPadding(15)
         .dimension(heightDim)
         .group(heightGroup)
         .colorAccessor(function(d) {
             return d.key;
         })
         .colors(heightColors)
+        .renderLabel(true)
+        .title(function(d) {
+            return d.value + " Superheroes are " + d.key + " in height";
+        })
         .elasticY(true)
         .x(d3.scale.ordinal())
         .xUnits(dc.units.ordinal)
@@ -347,12 +360,17 @@ function weight(ndx) {
         .width(500)
         .height(350)
         .useViewBoxResizing(true)
-        .margins({ top: 10, right: 40, bottom: 40, left: 40 })
+        .margins({ top: 15, right: 40, bottom: 40, left: 40 })
+        .clipPadding(15)
         .dimension(weightDim)
         .colorAccessor(function(d) {
             return d.key;
         })
         .colors(weightColors)
+        .renderLabel(true)
+        .title(function(d) {
+            return d.value + " Superheroes weigh " + d.key;
+        })
         .group(weightGroup)
         .elasticY(true)
         .x(d3.scale.ordinal())
@@ -373,11 +391,18 @@ function creator(ndx) {
         .height(400)
         .margins({ top: 10, right: 20, bottom: 40, left: 20 })
         //.xAxisLabel(' Super Heroes')
-        .dimension(creatorDim)
-        .group(creatorGroup)
         .cap(10)
         .useViewBoxResizing(true)
-        .transitionDuration(500);
+        .title(function(d) {
+            return d.value + " Superhero(es) created by " + d.key;
+        })
+        .label(function(d) {
+            console.log(d.key)
+            return d.key + " | " + d.value
+        })
+        .transitionDuration(500)
+        .dimension(creatorDim)
+        .group(creatorGroup);
 }
 
 
@@ -410,6 +435,10 @@ function stats(ndx) {
         .elasticY(true)
         .legend(dc.legend().x(80).y(20).itemHeight(18).gap(5).horizontal(true).autoItemWidth(true))
         .useViewBoxResizing(true)
+        .brushOn(false)
+        .title(function(d) {
+            return d.value + " Superhero(es) with this attribute at " + d.key;
+        })
         .compose([
             dc.lineChart(compositeChart)
             .colors('green')

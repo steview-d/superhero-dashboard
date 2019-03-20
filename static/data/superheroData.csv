@@ -408,7 +408,7 @@ Lex Luthor,100,55,25,65,70,70,No,DC Comics,bad,Male,Human,6'2' // 188 cm,210 lb 
 Light Lass,75,10,35,30,70,45,No,DC Comics,good,Female,,5'5 // 165 cm,120 lb // 54 kg,Blue,Red,,265
 Lightning Lad,75,10,25,30,60,45,No,DC Comics,good,Male,,5'1 // 155 cm,145 lb // 65 kg,Blue,Red,,245
 Lightning Lord,75,10,25,45,70,45,No,DC Comics,bad,Male,,6'3 // 191 cm,210 lb // 95 kg,Blue,Red,,270
-Living Brain,90,55,35,60,35,30,No,Marvel Comics,bad,Other,,6'6 // 198 cm,800 lb // 360 kg,Yellow,,,305
+Living Brain,90,55,35,60,35,30,No,Marvel Comics,bad,Other,,6'6 // 198 cm,800 lb // 360 kg,Yellow,No Hair,Silver,305
 Living Tribunal,100,100,100,100,100,30,No,Marvel Comics,neutral,Male,Cosmic Entity,- // 0 cm,- lb // 0 kg,Blue,No Hair,Yellow,530
 Liz Sherman,55,35,30,45,75,50,No,Dark Horse Comics,good,Female,,- // 0 cm,- lb // 0 kg,,,,290
 Lizard,80,55,60,70,80,60,Yes,Marvel Comics,bad,Male,Human,6'8 // 203 cm,510 lb // 230 kg,Red,No Hair,,405
@@ -505,7 +505,7 @@ Offspring,80,10,35,100,100,60,No,DC Comics,good,Male,,- // 0 cm,- lb // 0 kg,,,,
 Omega Red,70,70,50,85,70,90,No,Marvel Comics,bad,Male,,6'11 // 211 cm,425 lb // 191 kg,Red,Blond,,435
 Omniscient,0,0,0,0,0,0,No,Team Epic TV,good,Male,,5'11 // 180 cm,145 lb // 65 kg,Brown,Black,,240
 One Punch Man,65,100,95,100,70,65,No,Shueisha,good,Male,Human,5'9 // 175 cm,154 lb // 69 kg,,No Hair,,495
-One-Above-All,100,100,100,100,100,100,No,Marvel Comics,neutral,Other,Cosmic Entity,- // 0 cm,- lb // 0 kg,,,,600
+One-Above-All,100,100,100,100,100,100,No,Marvel Comics,neutral,Other,Cosmic Entity,- // 0 cm,- lb // 0 kg,Yellow,Blond,,600
 Onslaught,95,100,35,100,100,55,No,Marvel Comics,bad,Male,Mutant,10'0 // 305 cm,900 lb // 405 kg,Red,No Hair,,485
 Oracle,90,15,25,30,20,80,Yes,DC Comics,good,Female,Human,5'10 // 178 cm,132 lb // 59 kg,Blue,Red,,260
 Osiris,90,85,60,95,65,45,No,DC Comics,good,Male,,- // 0 cm,- lb // 0 kg,Brown,Brown,,440
