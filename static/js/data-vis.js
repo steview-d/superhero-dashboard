@@ -150,14 +150,22 @@ function alignment(ndx) {
         .transitionDuration(500)
         .cx(210)
         .legend(dc.legend().x(420).y(10).itemHeight(35).gap(8))
+        .on('pretransition', function(chart) {
+            chart.selectAll('text.pie-slice').text(function(d) {
+                var percent = dc.utils.printSingleValue((d.endAngle - d.startAngle) / (2 * Math.PI) * 100);
+                if (percent > 9) {
+                    var key_upper = d.data.key.charAt(0).toUpperCase() + d.data.key.slice(1);
+                    return key_upper + ' | ' + Math.round(percent) + '%';
+                }
+                else if (percent > 0) {
+                    return Math.round(percent) + '%';
+                }
+            });
+        })
         .colorAccessor(function(d) {
             return d.key;
         })
         .colors(alignmentColors)
-        .label(function(d) {
-            //Capitalise first letter in string
-            return d.key.charAt(0).toUpperCase() + d.key.slice(1);
-        })
         .title(function(d) {
             if (d.value === 1) {
                 return d.value + " Superhero is " + d.key;
@@ -186,6 +194,18 @@ function alter_ego(ndx) {
         .transitionDuration(500)
         .cx(210)
         .legend(dc.legend().x(420).y(10).itemHeight(35).gap(8))
+        .on('pretransition', function(chart) {
+            chart.selectAll('text.pie-slice').text(function(d) {
+                var percent = dc.utils.printSingleValue((d.endAngle - d.startAngle) / (2 * Math.PI) * 100);
+                if (percent > 9) {
+                    var key_upper = d.data.key.charAt(0).toUpperCase() + d.data.key.slice(1);
+                    return key_upper + ' | ' + Math.round(percent) + '%';
+                }
+                else if (percent > 0) {
+                    return Math.round(percent) + '%';
+                }
+            });
+        })
         .colorAccessor(function(d) {
             return d.key;
         })
@@ -201,19 +221,6 @@ function alter_ego(ndx) {
         .dimension(alterEgoDim)
         .group(alterEgoGroup);
 }
-
-// function skin_color(ndx) {
-//     // Most likely not using - too many blanks
-//     var skinColorDim = ndx.dimension(dc.pluck('Skin color'));
-//     var skinColorGroup = remove_blanks(skinColorDim.group(), "");
-
-//     dc.pieChart('#skin-color')
-//         .height(350)
-//         .radius(130)
-//         .slicesCap(7)
-//         .dimension(skinColorDim)
-//         .group(skinColorGroup);
-// }
 
 function hair_color(ndx) {
 
@@ -231,6 +238,18 @@ function hair_color(ndx) {
         .cx(210)
         .slicesCap(6)
         .legend(dc.legend().x(420).y(10).itemHeight(35).gap(8))
+        .on('pretransition', function(chart) {
+            chart.selectAll('text.pie-slice').text(function(d) {
+                var percent = dc.utils.printSingleValue((d.endAngle - d.startAngle) / (2 * Math.PI) * 100);
+                if (percent > 9) {
+                    var key_upper = d.data.key.charAt(0).toUpperCase() + d.data.key.slice(1);
+                    return key_upper + ' | ' + Math.round(percent) + '%';
+                }
+                else if (percent > 0) {
+                    return Math.round(percent) + '%';
+                }
+            });
+        })
         .colorAccessor(function(d) {
             return d.key;
         })
@@ -268,6 +287,18 @@ function eye_color(ndx) {
         .cx(210)
         .slicesCap(7)
         .legend(dc.legend().x(420).y(10).itemHeight(35).gap(8))
+        .on('pretransition', function(chart) {
+            chart.selectAll('text.pie-slice').text(function(d) {
+                var percent = dc.utils.printSingleValue((d.endAngle - d.startAngle) / (2 * Math.PI) * 100);
+                if (percent > 9) {
+                    var key_upper = d.data.key.charAt(0).toUpperCase() + d.data.key.slice(1);
+                    return key_upper + ' | ' + Math.round(percent) + '%';
+                }
+                else if (percent > 0) {
+                    return Math.round(percent) + '%';
+                }
+            });
+        })
         .colorAccessor(function(d) {
             return d.key;
         })
