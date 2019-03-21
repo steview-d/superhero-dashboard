@@ -323,6 +323,8 @@ function height(ndx) {
 
     var heightColors = d3.scale.ordinal()
         .range(['mediumseagreen', 'indianred']);
+        
+    var heightCount;
 
     var heightDim = ndx.dimension(function(d) {
         switch (true) {

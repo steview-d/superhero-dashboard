@@ -34,6 +34,17 @@ p {
     background-size: auto;
 }
 
+.inline-link {
+    color: #bf0d1c;
+    transition: all .2s ease-in-out
+}
+
+.inline-link:focus,
+.inline-link:hover {
+    color: #bf0d1c;
+    opacity: 0.8;
+    text-decoration: none;
+}
 
 /*---------------------------------------------- Top Title Bar --------------*/
 
@@ -142,17 +153,17 @@ p {
 
 
 /*---------------------------------------------- Footer ---------------------*/
+
 .footer {
-        min-height: 50px;
+    min-height: 50px;
     margin-top: 12.5px;
-        background-color: black;
+    background-color: black;
     color: white;
 }
 
 .footer-content {
     display: flex;
     flex-wrap: wrap;
-    /*justify-content: space-between;*/
     align-items: center;
     text-align: center;
     padding: 8px;
