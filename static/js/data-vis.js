@@ -230,6 +230,19 @@ function hair_color(ndx) {
     var hairColorDim = ndx.dimension(dc.pluck('Hair color'));
     var hairColorGroup = remove_blanks(hairColorDim.group(), "");
 
+    function hair_title(k, v) {
+        if (k === "No Hair") {
+            return v + " Superhero(es) with " + k;
+        }
+        else if (k === "Others") {
+            return v + " Superhero(es) with a different color hair";
+        }
+        else {
+            return v + " Superhero(es) with " + k + " hair";
+        }
+    }
+
+
     dc.pieChart('#hair-color')
         .width(500)
         .height(350)
@@ -255,15 +268,16 @@ function hair_color(ndx) {
         })
         .colors(alignmentColors)
         .title(function(d) {
-            if (d.key === "No Hair") {
-                return d.value + " Superhero(es) with " + d.key;
-            }
-            else if (d.key === "Others") {
-                return d.value + " Superhero(es) with a different color hair";
-            }
-            else {
-                return d.value + " Superhero(es) with " + d.key + " hair";
-            }
+            hair_title(d.key, d.value);
+            // if (d.key === "No Hair") {
+            //     return d.value + " Superhero(es) with " + d.key;
+            // }
+            // else if (d.key === "Others") {
+            //     return d.value + " Superhero(es) with a different color hair";
+            // }
+            // else {
+            //     return d.value + " Superhero(es) with " + d.key + " hair";
+            // }
         })
         .useViewBoxResizing(true)
         .dimension(hairColorDim)
@@ -323,7 +337,7 @@ function height(ndx) {
 
     var heightColors = d3.scale.ordinal()
         .range(['mediumseagreen', 'indianred']);
-        
+
     var heightCount;
 
     var heightDim = ndx.dimension(function(d) {

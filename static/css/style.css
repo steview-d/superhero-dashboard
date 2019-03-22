@@ -1,16 +1,21 @@
 /*---------------------------------------------- General Styling ------------*/
 
+.min-height-wrapper {
+    min-height: calc(100vh - 100px);
+}
+
 .eq-column-height {
     display: flex;
     flex-wrap: wrap;
 }
 
 hr {
-    margin: 15px auto;
+    margin: 0 auto 15px;
     border-color: #888;
 }
 
 .content-wrapper {
+    width: 100%;
     padding: 15px 10px;
     border: 2px solid red;
     border-radius: 10px;
@@ -75,10 +80,28 @@ p {
     text-align: center;
 }
 
-.reset-filters {
+.reset-filters-top {
     margin: 10px 20px;
 }
 
+.header-buttons {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    font-size: 1.4em;
+}
+
+.reset-filters {
+    color: indianred;
+    cursor: pointer;
+}
+
+.hide-content {
+    color: indianred;
+    cursor: pointer;
+
+}
 
 /*---------------------------------------------- Gender ---------------------*/
 
