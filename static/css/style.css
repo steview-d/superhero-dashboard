@@ -1,19 +1,5 @@
 /*---------------------------------------------- General Styling ------------*/
 
-.min-height-wrapper {
-    min-height: calc(100vh - 100px);
-}
-
-.eq-column-height {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-hr {
-    margin: 0 auto 15px;
-    border-color: #888;
-}
-
 .content-wrapper {
     width: 100%;
     padding: 15px 10px;
@@ -26,12 +12,26 @@ hr {
 }
 
 .heading--h3 {
-    margin: 0 auto 15px auto;
+    margin: 0 auto;
     color: #141414;
 }
 
 p {
     color: #000;
+}
+
+.min-height-wrapper {
+    min-height: calc(100vh - 100px);
+}
+
+.eq-column-height {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+hr {
+    margin: 15px auto 15px;
+    border-color: #888;
 }
 
 .bg-fixed {
@@ -51,9 +51,26 @@ p {
     text-decoration: none;
 }
 
+
+/*---------------------------------------------- Colors ---------------------*/
+
+.color--pink {
+    color: #ff61c8;
+}
+
+.color--blue {
+    color: #5020ff;
+}
+
+.color--green {
+    color: #03ff74;
+}
+
+
 /*---------------------------------------------- Top Title Bar --------------*/
 
 .top-bar {
+    position: fixed;
     min-height: 50px;
     background-image: linear-gradient(#801515, #aa3939 40%, #d46a6a);
     display: flex;
@@ -61,12 +78,23 @@ p {
     justify-content: space-around;
     align-items: center;
     margin-bottom: 12.5px;
+    z-index: 1;
 }
 
 @media (min-width: 768px) {
     .top-bar {
         border: 1px solid #ddd;
         border-radius: 5px;
+    }
+}
+
+.spacer {
+    min-height: 100px;
+}
+
+@media (min-width: 400px) {
+    .spacer {
+        min-height: 63px;
     }
 }
 
@@ -81,8 +109,24 @@ p {
 }
 
 .reset-filters-top {
-    margin: 10px 20px;
+    margin: 0 20px 10px;
+
 }
+
+.reset-filters-top,
+.reset-filters-top:focus,
+.reset-filters-top:active:focus {
+    outline: none;
+}
+
+@media (min-width: 400px) {
+    .reset-filters-top {
+        margin-top: 10px;
+    }
+}
+
+
+/*---------------------------------------------- Header Buttons -------------*/
 
 .header-buttons {
     height: 100%;
@@ -92,15 +136,12 @@ p {
     font-size: 1.4em;
 }
 
-.reset-filters {
+.hide-content-btn {
+    float: right;
     color: indianred;
     cursor: pointer;
-}
-
-.hide-content {
-    color: indianred;
-    cursor: pointer;
-
+    font-size: 1.4em;
+    padding-right: 5px;
 }
 
 /*---------------------------------------------- Gender ---------------------*/
@@ -127,18 +168,6 @@ p {
     align-items: center;
 }
 
-.gender-color-female {
-    color: #ff61c8;
-}
-
-.gender-color-male {
-    color: #5020ff;
-}
-
-.gender-color-genderless {
-    color: #03ff74;
-}
-
 
 /*---------------------------------------------- Charts ---------------------*/
 
@@ -150,28 +179,10 @@ p {
     fill: black;
 }
 
-.pie-chart {
+.chart {
     width: 100%;
     height: 100%;
     margin: 0 0 10px 0;
-}
-
-.bar-chart {
-    margin: 10px 0;
-    width: 100%;
-    height: 100%;
-}
-
-.row-chart {
-    margin: 10px 0;
-    width: 100%;
-    height: 100%;
-}
-
-.line-chart {
-    margin: 10px 0;
-    width: 100%;
-    height: 100%;
 }
 
 

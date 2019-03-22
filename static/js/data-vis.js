@@ -198,8 +198,7 @@ function alter_ego(ndx) {
             chart.selectAll('text.pie-slice').text(function(d) {
                 var percent = dc.utils.printSingleValue((d.endAngle - d.startAngle) / (2 * Math.PI) * 100);
                 if (percent > 9) {
-                    var key_upper = d.data.key.charAt(0).toUpperCase() + d.data.key.slice(1);
-                    return key_upper + ' | ' + Math.round(percent) + '%';
+                    return d.data.key + ' | ' + Math.round(percent) + '%';
                 }
                 else if (percent > 0) {
                     return Math.round(percent) + '%';
@@ -242,7 +241,6 @@ function hair_color(ndx) {
         }
     }
 
-
     dc.pieChart('#hair-color')
         .width(500)
         .height(350)
@@ -255,8 +253,7 @@ function hair_color(ndx) {
             chart.selectAll('text.pie-slice').text(function(d) {
                 var percent = dc.utils.printSingleValue((d.endAngle - d.startAngle) / (2 * Math.PI) * 100);
                 if (percent > 9) {
-                    var key_upper = d.data.key.charAt(0).toUpperCase() + d.data.key.slice(1);
-                    return key_upper + ' | ' + Math.round(percent) + '%';
+                    return d.data.key + ' | ' + Math.round(percent) + '%';
                 }
                 else if (percent > 0) {
                     return Math.round(percent) + '%';
@@ -269,15 +266,6 @@ function hair_color(ndx) {
         .colors(alignmentColors)
         .title(function(d) {
             hair_title(d.key, d.value);
-            // if (d.key === "No Hair") {
-            //     return d.value + " Superhero(es) with " + d.key;
-            // }
-            // else if (d.key === "Others") {
-            //     return d.value + " Superhero(es) with a different color hair";
-            // }
-            // else {
-            //     return d.value + " Superhero(es) with " + d.key + " hair";
-            // }
         })
         .useViewBoxResizing(true)
         .dimension(hairColorDim)
@@ -293,6 +281,15 @@ function eye_color(ndx) {
     var eyeColorDim = ndx.dimension(dc.pluck('Eye color'));
     var eyeColorGroup = remove_blanks(eyeColorDim.group(), "");
 
+    function eye_title(k, v) {
+        if (k === "Others") {
+            return v + " Superhero(es) with a different color eyes";
+        }
+        else {
+            return v + " Superhero(es) with " + k + " eyes";
+        }
+    }
+
     dc.pieChart('#eye-color')
         .width(500)
         .height(350)
@@ -305,8 +302,7 @@ function eye_color(ndx) {
             chart.selectAll('text.pie-slice').text(function(d) {
                 var percent = dc.utils.printSingleValue((d.endAngle - d.startAngle) / (2 * Math.PI) * 100);
                 if (percent > 9) {
-                    var key_upper = d.data.key.charAt(0).toUpperCase() + d.data.key.slice(1);
-                    return key_upper + ' | ' + Math.round(percent) + '%';
+                    return d.data.key + ' | ' + Math.round(percent) + '%';
                 }
                 else if (percent > 0) {
                     return Math.round(percent) + '%';
@@ -318,12 +314,7 @@ function eye_color(ndx) {
         })
         .colors(alignmentColors)
         .title(function(d) {
-            if (d.key === "Others") {
-                return d.value + " Superhero(es) with a different color eyes";
-            }
-            else {
-                return d.value + " Superhero(es) with " + d.key + " eyes";
-            }
+            eye_title(d.key, d.value);
         })
         .useViewBoxResizing(true)
         .dimension(eyeColorDim)

@@ -1,6 +1,6 @@
 /* ------------------------------------------------ Reset Filters -*/
 
-$('.reset-jq').click(function() {
+$('#reset-filters').click(function() {
     dc.filterAll();
     dc.renderAll();
 });
@@ -8,9 +8,9 @@ $('.reset-jq').click(function() {
 
 /* ------------------------------------------------ Hide Content -*/
 
-$('.hide-content').click(function() {
-    $(this).parent().parent().nextAll('#hide-content-toggle').slideToggle();
-    $(this).parent().parent().parent().parent().toggleClass('eq-column-height');
-    $(this).toggleClass('fa-eye');
-    $(this).toggleClass('fa-eye-slash');
+$('.hide-content-btn').click(function() {
+    $(this).parent().nextAll('.hide-content-toggle').slideToggle();
+    $(this).parent().parent().parent().toggleClass('eq-column-height');
+    $(this).toggleClass('fa-angle-down');
+    $(this).toggleClass('fa-angle-up');
 });
