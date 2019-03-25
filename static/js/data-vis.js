@@ -7,16 +7,7 @@ queue()
 function createDataVis(error, superheroData) {
     var ndx = crossfilter(superheroData);
 
-    /* ---------- Data Preparation -------*/
-
-    var heroAttributes = [
-        "Intelligence",
-        "Strength",
-        "Speed",
-        "Durability",
-        "Power",
-        "Combat"
-    ];
+    /* ------- Data Conversion Functions -*/
 
     function hero_attr_to_integer(hero_attr) {
         // Convert all hero attributes to integers. Store as a
@@ -28,7 +19,6 @@ function createDataVis(error, superheroData) {
             });
         });
     }
-    hero_attr_to_integer(heroAttributes);
 
     function height_weight_conversion(key, firstIndex, lastIndex) {
         // Iterate through the given key to remove unwanted chars from the
@@ -41,11 +31,25 @@ function createDataVis(error, superheroData) {
                     d[key].lastIndexOf(lastIndex)), 10);
         });
     }
+
+    /* ---------- Data Preparation -------*/
+
+    var heroAttributes = [
+        "Intelligence",
+        "Strength",
+        "Speed",
+        "Durability",
+        "Power",
+        "Combat"
+    ];
+
+    hero_attr_to_integer(heroAttributes);
+
     height_weight_conversion("Height", "// ", " c");
     height_weight_conversion("Weight", "// ", " k");
 
 
-    /* ---------- Gender -----------------*/
+    /* ---------- Gender Percent ---------*/
     gender_selector(ndx);
     display_gender_percent(ndx, 'Male', '#percent-male');
     display_gender_percent(ndx, 'Female', '#percent-female');
@@ -68,7 +72,6 @@ function createDataVis(error, superheroData) {
     stats(ndx);
 
     dc.renderAll();
-
 }
 
 
@@ -86,7 +89,7 @@ function remove_blanks(group, value_to_remove) {
 }
 
 
-/* --------------------------------------------- Gender Functions -*/
+/* ----------------------------------- Gender Selection & Percent -*/
 
 function gender_selector(ndx) {
     var genderDim = ndx.dimension(dc.pluck('Gender'));
@@ -100,6 +103,7 @@ function gender_selector(ndx) {
 
 function display_gender_percent(ndx, gender, element) {
     var genderPercent = ndx.groupAll().reduce(
+        // Sum totals for each gender type
         function(p, v) {
             p.total++;
             if (v.Gender === gender) {
@@ -136,6 +140,8 @@ function display_gender_percent(ndx, gender, element) {
 /* --------------------------------------------------- Pie Charts -*/
 
 function alignment(ndx) {
+    // Pie to show number of heroes who are good / bad / neutral
+    // relative to rest of data
 
     var alignmentColors = d3.scale.ordinal()
         .range(['#6c6cff', '#ff6c6c', '#ffda6c']);
@@ -147,10 +153,11 @@ function alignment(ndx) {
         .width(500)
         .height(350)
         .radius(170)
-        .transitionDuration(500)
         .cx(210)
+        .transitionDuration(500)
         .legend(dc.legend().x(420).y(10).itemHeight(35).gap(8))
         .on('pretransition', function(chart) {
+            // Calculate and display % of each pie slice
             chart.selectAll('text.pie-slice').text(function(d) {
                 var percent = dc.utils.printSingleValue((d.endAngle - d.startAngle) / (2 * Math.PI) * 100);
                 if (percent > 9) {
@@ -167,6 +174,7 @@ function alignment(ndx) {
         })
         .colors(alignmentColors)
         .title(function(d) {
+            // Show numerical values on hover
             if (d.value === 1) {
                 return d.value + " Superhero is " + d.key;
             }
@@ -180,6 +188,8 @@ function alignment(ndx) {
 }
 
 function alter_ego(ndx) {
+    // Pie to show number of heroes with and without an alter ego
+    // relative to rest of data
 
     var alterEgoColors = d3.scale.ordinal()
         .range(['darkorchid', '#ccb232']);
@@ -191,10 +201,11 @@ function alter_ego(ndx) {
         .width(500)
         .height(350)
         .radius(170)
-        .transitionDuration(500)
         .cx(210)
+        .transitionDuration(500)
         .legend(dc.legend().x(420).y(10).itemHeight(35).gap(8))
         .on('pretransition', function(chart) {
+            // Calculate and display % of each pie slice
             chart.selectAll('text.pie-slice').text(function(d) {
                 var percent = dc.utils.printSingleValue((d.endAngle - d.startAngle) / (2 * Math.PI) * 100);
                 if (percent > 9) {
@@ -210,6 +221,7 @@ function alter_ego(ndx) {
         })
         .colors(alterEgoColors)
         .title(function(d) {
+            // Show numerical values on hover
             var grammar = "";
             if (d.key === "No") {
                 grammar = " do not";
@@ -222,6 +234,8 @@ function alter_ego(ndx) {
 }
 
 function hair_color(ndx) {
+    // Pie to show number of heroes with a specific hair color
+    // relative to rest of data
 
     var alignmentColors = d3.scale.ordinal()
         .range(['black', '#e0d07e', 'saddlebrown', 'slategray', 'indianred', 'gray', 'lightsteelblue']);
@@ -230,6 +244,7 @@ function hair_color(ndx) {
     var hairColorGroup = remove_blanks(hairColorDim.group(), "");
 
     function hair_title(k, v) {
+        // Show numerical values for hair color on hover
         if (k === "No Hair") {
             return v + " Superhero(es) with " + k;
         }
@@ -245,11 +260,12 @@ function hair_color(ndx) {
         .width(500)
         .height(350)
         .radius(170)
-        .transitionDuration(500)
         .cx(210)
+        .transitionDuration(500)
         .slicesCap(6)
         .legend(dc.legend().x(420).y(10).itemHeight(35).gap(8))
         .on('pretransition', function(chart) {
+            // Calculate and display % of each pie slice
             chart.selectAll('text.pie-slice').text(function(d) {
                 var percent = dc.utils.printSingleValue((d.endAngle - d.startAngle) / (2 * Math.PI) * 100);
                 if (percent > 9) {
@@ -265,7 +281,7 @@ function hair_color(ndx) {
         })
         .colors(alignmentColors)
         .title(function(d) {
-            hair_title(d.key, d.value);
+            return hair_title(d.key, d.value);
         })
         .useViewBoxResizing(true)
         .dimension(hairColorDim)
@@ -274,6 +290,8 @@ function hair_color(ndx) {
 }
 
 function eye_color(ndx) {
+    // Pie to show number of heroes with a specific eye color
+    // relative to rest of data
 
     var alignmentColors = d3.scale.ordinal()
         .range(['cornflowerblue', 'saddlebrown', 'mediumseagreen', 'indianred', '#e0d07e', 'black', 'gray', 'lightsteelblue', ]);
@@ -282,6 +300,7 @@ function eye_color(ndx) {
     var eyeColorGroup = remove_blanks(eyeColorDim.group(), "");
 
     function eye_title(k, v) {
+        // Show numerical values for eye color on hover
         if (k === "Others") {
             return v + " Superhero(es) with a different color eyes";
         }
@@ -294,11 +313,12 @@ function eye_color(ndx) {
         .width(500)
         .height(350)
         .radius(170)
-        .transitionDuration(500)
         .cx(210)
+        .transitionDuration(500)
         .slicesCap(7)
         .legend(dc.legend().x(420).y(10).itemHeight(35).gap(8))
         .on('pretransition', function(chart) {
+            // Calculate and display % of each pie slice
             chart.selectAll('text.pie-slice').text(function(d) {
                 var percent = dc.utils.printSingleValue((d.endAngle - d.startAngle) / (2 * Math.PI) * 100);
                 if (percent > 9) {
@@ -314,7 +334,7 @@ function eye_color(ndx) {
         })
         .colors(alignmentColors)
         .title(function(d) {
-            eye_title(d.key, d.value);
+            return eye_title(d.key, d.value);
         })
         .useViewBoxResizing(true)
         .dimension(eyeColorDim)
@@ -325,11 +345,11 @@ function eye_color(ndx) {
 /* --------------------------------------------------- Bar Charts -*/
 
 function height(ndx) {
+    // Bar chart to show height values for each hero, grouped by range,
+    // relative to rest of data
 
     var heightColors = d3.scale.ordinal()
         .range(['mediumseagreen', 'indianred']);
-
-    var heightCount;
 
     var heightDim = ndx.dimension(function(d) {
         switch (true) {
@@ -373,6 +393,8 @@ function height(ndx) {
 }
 
 function weight(ndx) {
+    // Bar chart to show weight values for each hero, grouped by range,
+    // relative to rest of data
 
     var weightColors = d3.scale.ordinal()
         .range(['mediumseagreen', 'indianred']);
@@ -421,6 +443,9 @@ function weight(ndx) {
 /* --------------------------------------------------- Row Charts -*/
 
 function publisher(ndx) {
+    // Row chart to show heroes, sorted by publisher,
+    // relative to rest of data
+
     var publisherDim = ndx.dimension(dc.pluck('Publisher'));
     var publisherGroup = remove_blanks(publisherDim.group(), "");
 
@@ -446,6 +471,8 @@ function publisher(ndx) {
 /* -------------------------------------------------- Line Charts -*/
 
 function stats(ndx) {
+    // Line charts for each attribute to show the frequency of each value,
+    // relative to rest of data
 
     var intDim = ndx.dimension(dc.pluck('intelligence'));
     var intGroup = remove_blanks(intDim.group(), 0);
