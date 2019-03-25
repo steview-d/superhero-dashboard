@@ -88,6 +88,19 @@ function remove_blanks(group, value_to_remove) {
     };
 }
 
+function show_slice_percent(key, endAngle, startAngle) {
+    // Return the % of each pie slice as a string to be displayed
+    // on the slice itself.
+    // To save space, %'s below 9% display only the % and no other text.
+    var percent = dc.utils.printSingleValue((endAngle - startAngle) / (2 * Math.PI) * 100);
+    if (percent > 9) {
+        return key + ' | ' + Math.round(percent) + '%';
+    }
+    else if (percent > 0) {
+        return Math.round(percent) + '%';
+    }
+}
+
 
 /* ----------------------------------- Gender Selection & Percent -*/
 
@@ -157,16 +170,8 @@ function alignment(ndx) {
         .transitionDuration(500)
         .legend(dc.legend().x(420).y(10).itemHeight(35).gap(8))
         .on('pretransition', function(chart) {
-            // Calculate and display % of each pie slice
             chart.selectAll('text.pie-slice').text(function(d) {
-                var percent = dc.utils.printSingleValue((d.endAngle - d.startAngle) / (2 * Math.PI) * 100);
-                if (percent > 9) {
-                    var key_upper = d.data.key.charAt(0).toUpperCase() + d.data.key.slice(1);
-                    return key_upper + ' | ' + Math.round(percent) + '%';
-                }
-                else if (percent > 0) {
-                    return Math.round(percent) + '%';
-                }
+                return show_slice_percent(d.data.key, d.endAngle, d.startAngle);
             });
         })
         .colorAccessor(function(d) {
@@ -205,15 +210,8 @@ function alter_ego(ndx) {
         .transitionDuration(500)
         .legend(dc.legend().x(420).y(10).itemHeight(35).gap(8))
         .on('pretransition', function(chart) {
-            // Calculate and display % of each pie slice
             chart.selectAll('text.pie-slice').text(function(d) {
-                var percent = dc.utils.printSingleValue((d.endAngle - d.startAngle) / (2 * Math.PI) * 100);
-                if (percent > 9) {
-                    return d.data.key + ' | ' + Math.round(percent) + '%';
-                }
-                else if (percent > 0) {
-                    return Math.round(percent) + '%';
-                }
+                return show_slice_percent(d.data.key, d.endAngle, d.startAngle);
             });
         })
         .colorAccessor(function(d) {
@@ -265,15 +263,8 @@ function hair_color(ndx) {
         .slicesCap(6)
         .legend(dc.legend().x(420).y(10).itemHeight(35).gap(8))
         .on('pretransition', function(chart) {
-            // Calculate and display % of each pie slice
             chart.selectAll('text.pie-slice').text(function(d) {
-                var percent = dc.utils.printSingleValue((d.endAngle - d.startAngle) / (2 * Math.PI) * 100);
-                if (percent > 9) {
-                    return d.data.key + ' | ' + Math.round(percent) + '%';
-                }
-                else if (percent > 0) {
-                    return Math.round(percent) + '%';
-                }
+                return show_slice_percent(d.data.key, d.endAngle, d.startAngle);
             });
         })
         .colorAccessor(function(d) {
@@ -318,15 +309,8 @@ function eye_color(ndx) {
         .slicesCap(7)
         .legend(dc.legend().x(420).y(10).itemHeight(35).gap(8))
         .on('pretransition', function(chart) {
-            // Calculate and display % of each pie slice
             chart.selectAll('text.pie-slice').text(function(d) {
-                var percent = dc.utils.printSingleValue((d.endAngle - d.startAngle) / (2 * Math.PI) * 100);
-                if (percent > 9) {
-                    return d.data.key + ' | ' + Math.round(percent) + '%';
-                }
-                else if (percent > 0) {
-                    return Math.round(percent) + '%';
-                }
+                return show_slice_percent(d.data.key, d.endAngle, d.startAngle);
             });
         })
         .colorAccessor(function(d) {
