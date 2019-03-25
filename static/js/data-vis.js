@@ -48,6 +48,9 @@ function createDataVis(error, superheroData) {
     height_weight_conversion("Height", "// ", " c");
     height_weight_conversion("Weight", "// ", " k");
 
+    /* ---------- Hero Selector ---------*/
+
+    hero_selector(ndx);
 
     /* ---------- Gender Percent ---------*/
     gender_selector(ndx);
@@ -99,6 +102,21 @@ function show_slice_percent(key, endAngle, startAngle) {
     else if (percent > 0) {
         return Math.round(percent) + '%';
     }
+}
+
+
+/* ------------------------------------------ Super Hero Selector -*/
+
+function hero_selector(ndx) {
+    var heroDim = ndx.dimension(dc.pluck('Name'));
+    var heroGroup = heroDim.group();
+
+    dc.selectMenu('#hero-selector')
+        .dimension(heroDim)
+        .group(heroGroup)
+        .title(function(d) {
+            return d.key;
+        });
 }
 
 
@@ -246,6 +264,9 @@ function hair_color(ndx) {
         if (k === "No Hair") {
             return v + " Superhero(es) with " + k;
         }
+        else if (k === "empty") {
+            return v + " Superhero(es) with no value stored for hair color";
+        }
         else if (k === "Others") {
             return v + " Superhero(es) with a different color hair";
         }
@@ -294,6 +315,9 @@ function eye_color(ndx) {
         // Show numerical values for eye color on hover
         if (k === "Others") {
             return v + " Superhero(es) with a different color eyes";
+        }
+        else if (k === "empty") {
+            return v + " Superhero(es) with no value stored for eye color";
         }
         else {
             return v + " Superhero(es) with " + k + " eyes";

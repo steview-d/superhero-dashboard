@@ -52,6 +52,14 @@ p {
     text-decoration: none;
 }
 
+.dropdown-filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
 
 /*---------------------------------------------- Colors ---------------------*/
 
@@ -145,13 +153,6 @@ p {
 
 .gender-text {
     margin: 10px 0;
-}
-
-.gender-filter {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
 }
 
 
