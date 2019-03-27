@@ -505,7 +505,7 @@ function stats(ndx) {
         .xAxisLabel('Attribute Value')
         .yAxisLabel('Frequency')
         .elasticY(true)
-        .legend(dc.legend().x(80).y(20).itemHeight(18).gap(5).horizontal(true).autoItemWidth(true))
+        .legend(dc.legend().x(80).y(20).itemHeight(18).gap(5).horizontal(true).autoItemWidth(false).itemWidth(90))
         .useViewBoxResizing(true)
         .brushOn(false)
         .title(function(d) {
