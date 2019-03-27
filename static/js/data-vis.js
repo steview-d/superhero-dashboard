@@ -461,7 +461,6 @@ function publisher(ndx) {
         .width(900)
         .height(400)
         .margins({ top: 10, right: 20, bottom: 40, left: 20 })
-        //.xAxisLabel(' Super Heroes')
         .cap(10)
         .useViewBoxResizing(true)
         .title(function(d) {

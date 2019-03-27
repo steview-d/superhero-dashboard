@@ -156,6 +156,7 @@ Every subsequent push to GitHub on the master branch updates the deployed site t
 
 ### Media
 - The original unmodified background image was sourced from google image search. It has since been modified and is being used in a non-profit educational capacity.
+- The favicon used was generated using this [Font Awesome Favicon Generator](https://paulferrett.com/fontawesome-favicon/).
 
 ### Acknowledgements ####
 - [Antonija Šimić](https://github.com/tonkec "Antonija's GitHub page"), my Code Institute mentor, for her invaluable advice and guidance.
