@@ -29,7 +29,7 @@ The first 2 wireframes (mobile & desktop) were created at the beginning of the p
 
 The final wireframe was put together part way through the project when I could better visualise what I wanted and is a lot closer to the final result.
 
-<img src="static/images/wireframes/mobile.png" align=top width=280>&nbsp;<img src="/static/images/wireframes/desktop.png" align=top width=280>&nbsp;<img src="/static/images/wireframes/desktop.png" align=top width=280>
+<img src="static/images/wireframes/mobile.png" align=top width=150>&nbsp;<img src="/static/images/wireframes/desktop.png" align=top width=320>&nbsp;<img src="/static/images/wireframes/desktop2.png" align=top width=320>
  
 ## Features
 
