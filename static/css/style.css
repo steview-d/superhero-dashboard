@@ -40,6 +40,10 @@ p {
     flex-wrap: wrap;
 }
 
+.row [class*=col-]{
+    margin:0 -.3px;
+}
+
 .inline-link {
     color: #bf0d1c;
     transition: all .2s ease-in-out

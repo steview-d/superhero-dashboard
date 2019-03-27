@@ -115,7 +115,11 @@ The following technologies were used in the design and build of this project.
 
 The site has been thoroughly tested in many ways. The JavaScript and its associated functions have all undergone extensive manual testing. A write up of this, along with the results, can be found [here](/manual_testing/test.md).
 
-The responsiveness and correct displaying of all elements has been tested on a number of devices, browsers, and resolutions. Chrome, Firefox, Opera, Edge, and IE all display without issue. There was one issue with IE which was fixed and is discussed in the JS testing section.
+The responsiveness and correct displaying of all elements has been tested on a number of devices, browsers, and resolutions. Chrome, Firefox, Opera, Safari, Edge, and IE all display without issue.
+
+There was one issue with IE which was fixed and is discussed in the JS testing section.
+
+There was an issue with the safari browser that caused the last element on each row of 2 or more elements to be pushed down on to an additional row. After doing some research I could see this was not uncommon in Safari and the fix I settled on was to target all bootstrap 'col-' classes and apply a negative left and right margin of -.3px.
 
 Chrome dev tools were used to simulate multiple devices and widths, and no issues were encountered.
 
